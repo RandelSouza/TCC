@@ -20,3 +20,4 @@ ryu-manager yourapp.py
 # BGP speaker (SSH console) requires paramiko
 # Zebra protocol service (database) requires SQLAlchemy
 # If you want to use these functions, please install the requirements:
+pip install -r tools/optional-requires
