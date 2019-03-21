@@ -49,3 +49,6 @@ exit
 # The "git clone" step below uses the master version of Floodlight. To use a specific version, specify the version branch in the "git clone" step by appending "-b <branch-name>", e.g. "-b v1.2".
 
 git clone git://github.com/floodlight/floodlight.git
+cd floodlight
+
+
