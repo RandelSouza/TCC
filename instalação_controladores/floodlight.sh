@@ -21,3 +21,6 @@
 # Eclipse Luna version is recommended to successfully import Floodlight project. Other Eclipse version would work as well, just people sometimes might have trouble on configuring those versions(most of time, JDK issues and "unresolved compilation problem"). This tutorial is written and tested with Eclipse Luna version so that version is recommended. For Floodlight master branch, you should still ensure to have Java 8 installed in your environment and JDK 1.8 is correctly configured at Eclipse. 
 
 sudo apt-get install build-essential ant maven python-dev eclipse
+
+# Floodlight v1.2 and Below
+To download dependencies for Floodlight v1.2 and below:
