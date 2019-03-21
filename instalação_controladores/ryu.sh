@@ -12,3 +12,4 @@ sudo pip install ryu
 git clone git://github.com/osrg/ryu.git
 cd ryu; pip install .
 # If you want to write your Ryu application, have a look at Writing ryu application document. After writing your application, just type:
+ryu-manager yourapp.py
