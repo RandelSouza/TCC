@@ -24,3 +24,4 @@ pip install -r tools/optional-requires
 # Please refer to tools/optional-requires for details.
 # Prerequisites
 # If you got some error messages at the installation stage, please confirm dependencies for building the required Python packages.
+# On Ubuntu(16.04 LTS or later):
