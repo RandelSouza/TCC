@@ -24,3 +24,7 @@ sudo apt-get install build-essential ant maven python-dev eclipse
 
 # Floodlight v1.2 and Below
 # To download dependencies for Floodlight v1.2 and below:
+
+sudo apt-get install build-essential openjdk-7-jdk ant maven python-dev eclipse
+
+
