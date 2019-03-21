@@ -31,4 +31,5 @@ sudo apt-get install build-essential openjdk-7-jdk ant maven python-dev eclipse
 
 # Floodlight is simple to download from Github and build. Please follow the following steps to either download and install a new copy of Floodlight or update an existing installation of Floodlight:
 
+# Installing Floodlight from Scratch
 
