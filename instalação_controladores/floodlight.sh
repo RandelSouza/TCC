@@ -50,5 +50,6 @@ exit
 
 git clone git://github.com/floodlight/floodlight.git
 cd floodlight
+git submodule init
 
 
