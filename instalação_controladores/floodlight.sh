@@ -55,4 +55,5 @@ git submodule update
 ant
 
 sudo mkdir /var/lib/floodlight
+sudo chmod 777 /var/lib/floodlight
 
