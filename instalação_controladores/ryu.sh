@@ -14,3 +14,4 @@ cd ryu; pip install .
 # If you want to write your Ryu application, have a look at Writing ryu application document. After writing your application, just type:
 ryu-manager yourapp.py
 # Optional Requirements
+# Some functions of ryu require extra packages:
