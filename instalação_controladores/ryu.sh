@@ -18,3 +18,4 @@ ryu-manager yourapp.py
 # OF-Config requires lxml and ncclient
 # NETCONF requires paramiko
 # BGP speaker (SSH console) requires paramiko
+# Zebra protocol service (database) requires SQLAlchemy
