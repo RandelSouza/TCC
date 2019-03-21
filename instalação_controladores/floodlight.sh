@@ -31,6 +31,15 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
 
+sudo su
+
+cat >> /etc/environment <<EOL
+JAVA_HOME=/usr/lib/jvm/java-8-oracle
+JRE_HOME=/usr/lib/jvm/java-8-oracle/jre
+EOL
+
+exit
+
 # Download And Build
 
 # Floodlight is simple to download from Github and build. Please follow the following steps to either download and install a new copy of Floodlight or update an existing installation of Floodlight:
