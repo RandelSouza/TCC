@@ -30,3 +30,4 @@
 
 ./pox.py openflow.of_01 --address=10.1.1.1 --port=6634
 
+# pox.py also supports a few command line options of its own which should
