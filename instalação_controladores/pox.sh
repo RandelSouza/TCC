@@ -15,3 +15,4 @@
 # POX currently communicates with OpenFlow 1.0 switches and includes
 # special support for the Open vSwitch/Nicira extensions.
 
+# pox.py boots up POX. It takes a list of module names on the command line,
