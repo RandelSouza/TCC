@@ -86,5 +86,5 @@ java -jar target/floodlight.jar
 
 
 # cd mininet
-# sudo mn --controller=remote,ip=<controller ip>,port=6653 --switch ovsk,protocols=OpenFlow13
+# sudo mn --controller=remote,ip=127.0.0.1,port=6653 --switch ovsk,protocols=OpenFlow13
 
