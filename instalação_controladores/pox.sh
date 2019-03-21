@@ -12,3 +12,4 @@
 # named "pypy"), and POX will run with pypy (this can be a significant
 # performance boost!).
 
+# POX currently communicates with OpenFlow 1.0 switches and includes
