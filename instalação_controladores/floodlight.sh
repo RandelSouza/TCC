@@ -54,3 +54,5 @@ git submodule init
 git submodule update
 ant
 
+sudo mkdir /var/lib/floodlight
+
