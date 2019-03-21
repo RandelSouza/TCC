@@ -77,7 +77,7 @@ java -jar target/floodlight.jar
 
 
 # Simulating A Network
-Now that Floodlight is running, you need to attach it to an OpenFlow network. One of the best tools for this is Mininet, a network simulation tool.
+# Now that Floodlight is running, you need to attach it to an OpenFlow network. One of the best tools for this is Mininet, a network simulation tool.
 
 Download the Floodlight VM. It includes Floodlight and Mininet.
 Start it in VMware Fusion or VirtualBox
