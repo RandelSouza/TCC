@@ -7,3 +7,4 @@
 # All of the code is freely available under the Apache 2.0 license. Ryu is fully written in Python.
 # Quick Start
 # Installing Ryu is quite easy:
+sudo pip install ryu
