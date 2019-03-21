@@ -16,3 +16,4 @@
 # special support for the Open vSwitch/Nicira extensions.
 
 # pox.py boots up POX. It takes a list of module names on the command line,
+# locates the modules, calls their launch() function (if it exists), and
