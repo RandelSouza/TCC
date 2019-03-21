@@ -10,3 +10,4 @@
 # under FreeBSD, Haiku, and elsewhere.  All you need is Python!)
 # You can place a pypy distribution alongside pox.py (in a directory
 # named "pypy"), and POX will run with pypy (this can be a significant
+# performance boost!).
