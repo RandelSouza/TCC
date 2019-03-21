@@ -28,3 +28,4 @@ pip install -r tools/optional-requires
 apt install gcc python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev zlib1g-dev
 # Support
 # sRyu Official site is http://osrg.github.io/ryu/.
+# If you have any questions, suggestions, and patches, the mailing list is available at ryu-devel ML. The ML archive at Gmane is also
