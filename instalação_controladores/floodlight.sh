@@ -83,3 +83,7 @@ java -jar target/floodlight.jar
 # Start it in VMware Fusion or VirtualBox
 # Login (username is floodlight and password is floodlight)
 # Its possible to run Mininet against the locally running Floodlight (just type "sudo mn") but you can also run it against a remote controller you built as well.  To do that, type:
+
+
+# sudo mn --controller=remote,ip=<controller ip>,port=6653 --switch ovsk,protocols=OpenFlow13
+
