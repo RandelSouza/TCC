@@ -74,3 +74,12 @@ java -jar target/floodlight.jar
 # git submodule update
 
 # If you are upgrading from Floodlight v1.2 or below to a newer version or the master branch, you should update to Java 8 at this point. Others should already have Java 8 installed or do not require it (if downgrading to v1.2 or below). Once you have satisfied this requirement, proceed with re-building the controller:
+
+
+# Simulating A Network
+Now that Floodlight is running, you need to attach it to an OpenFlow network. One of the best tools for this is Mininet, a network simulation tool.
+
+Download the Floodlight VM. It includes Floodlight and Mininet.
+Start it in VMware Fusion or VirtualBox
+Login (username is floodlight and password is floodlight)
+Its possible to run Mininet against the locally running Floodlight (just type "sudo mn") but you can also run it against a remote controller you built as well.  To do that, type:
