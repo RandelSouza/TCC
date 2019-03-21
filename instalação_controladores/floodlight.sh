@@ -62,3 +62,7 @@ sudo chmod 777 /var/lib/floodlight
 
 # testing controller run
 java -jar target/floodlight.jar
+
+
+
+# -------------------------------------------------------------- 
