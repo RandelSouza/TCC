@@ -17,3 +17,4 @@ ryu-manager yourapp.py
 # Some functions of ryu require extra packages:
 # OF-Config requires lxml and ncclient
 # NETCONF requires paramiko
+# BGP speaker (SSH console) requires paramiko
