@@ -21,3 +21,4 @@ ryu-manager yourapp.py
 # Zebra protocol service (database) requires SQLAlchemy
 # If you want to use these functions, please install the requirements:
 pip install -r tools/optional-requires
+# Please refer to tools/optional-requires for details.
