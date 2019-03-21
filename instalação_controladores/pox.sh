@@ -20,3 +20,4 @@
 # then transitions to the "up" state.
 
 # Modules are looked for everywhere that Python normally looks, plus the
+# "pox" and "ext" directories.  Thus, you can do the following:
