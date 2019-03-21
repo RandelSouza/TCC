@@ -80,6 +80,6 @@ java -jar target/floodlight.jar
 # Now that Floodlight is running, you need to attach it to an OpenFlow network. One of the best tools for this is Mininet, a network simulation tool.
 
 # Download the Floodlight VM. It includes Floodlight and Mininet.
-Start it in VMware Fusion or VirtualBox
+# Start it in VMware Fusion or VirtualBox
 Login (username is floodlight and password is floodlight)
 Its possible to run Mininet against the locally running Floodlight (just type "sudo mn") but you can also run it against a remote controller you built as well.  To do that, type:
