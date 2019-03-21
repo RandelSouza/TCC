@@ -13,3 +13,5 @@
   # Eclipse IDE (Eclipse Luna Preferred)
 
 # Floodlight Master and Above
+
+# To download Java 8, please refer to these instructions. Please download the latest version of Eclipse, making sure the version you choose supports Java 8. To download remaining dependencies for Floodlight master and above:
