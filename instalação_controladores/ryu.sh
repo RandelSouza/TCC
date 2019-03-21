@@ -8,3 +8,4 @@
 # Quick Start
 # Installing Ryu is quite easy:
 sudo pip install ryu
+# If you prefer to install Ryu from the source code:
