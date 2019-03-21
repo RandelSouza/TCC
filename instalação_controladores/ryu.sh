@@ -15,3 +15,4 @@ cd ryu; pip install .
 ryu-manager yourapp.py
 # Optional Requirements
 # Some functions of ryu require extra packages:
+# OF-Config requires lxml and ncclient
