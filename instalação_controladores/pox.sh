@@ -8,3 +8,4 @@
 # fine with Python 2.6), and should run under Linux, Mac OS, and Windows.
 # (And just about anywhere else -- we've run it on Android phones,
 # under FreeBSD, Haiku, and elsewhere.  All you need is Python!)
+# You can place a pypy distribution alongside pox.py (in a directory
