@@ -73,6 +73,6 @@ java -jar target/floodlight.jar
 # cd floodlight
 # git pull origin master
 # git submodule init
-git submodule update
+# git submodule update
 
 # If you are upgrading from Floodlight v1.2 or below to a newer version or the master branch, you should update to Java 8 at this point. Others should already have Java 8 installed or do not require it (if downgrading to v1.2 or below). Once you have satisfied this requirement, proceed with re-building the controller:
