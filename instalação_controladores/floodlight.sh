@@ -6,3 +6,4 @@
 # Linux
   # Your favorite flavor of Linux
   # Java development kit
+	# JDK 8 for Floodlight master and above
