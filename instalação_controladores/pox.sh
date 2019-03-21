@@ -6,3 +6,4 @@
 
 # POX officially requires Python 2.7 (though much of it will work fine
 # fine with Python 2.6), and should run under Linux, Mac OS, and Windows.
+# (And just about anywhere else -- we've run it on Android phones,
