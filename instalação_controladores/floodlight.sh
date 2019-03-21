@@ -22,10 +22,14 @@
 
 sudo apt-get install build-essential ant maven python-dev eclipse
 
-# Floodlight v1.2 and Below
-# To download dependencies for Floodlight v1.2 and below:
+# Install Oracle Java 8 on Ubuntu
+# You need to enable additional repository to your system to install Java 8 on Ubuntu VPS. After that install Oracle Java 8 on an Ubuntu system using apt-get. This repository contains a package named oracle-java8-installer, Which is not an actual Java package. Instead of that, this package contains a script to install Java on Ubuntu.
 
-sudo apt-get install build-essential openjdk-7-jdk ant maven python-dev eclipse
+# Run below commands to install Java 8 on Ubuntu and LinuxMint.
+
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
 
 # Download And Build
 
@@ -35,3 +39,4 @@ sudo apt-get install build-essential openjdk-7-jdk ant maven python-dev eclipse
 
 # The "git clone" step below uses the master version of Floodlight. To use a specific version, specify the version branch in the "git clone" step by appending "-b <branch-name>", e.g. "-b v1.2".
 
+git clone git://github.com/floodlight/floodlight.git
