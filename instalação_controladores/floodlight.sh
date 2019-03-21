@@ -71,7 +71,7 @@ java -jar target/floodlight.jar
 # The following steps show how to update Floodlight to master. Substitute "master" in the "git pull" step with your desired version's branch, e.g. "v1.1", "v1.2", etc. if you would like to switch to a different version.
 
 # cd floodlight
-git pull origin master
+# git pull origin master
 git submodule init
 git submodule update
 
