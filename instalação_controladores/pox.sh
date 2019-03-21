@@ -33,3 +33,4 @@
 # pox.py also supports a few command line options of its own which should
 # be given first:
 # --verbose      print stack traces for initialization exceptions
+# --no-openflow  don't start the openflow module automatically
