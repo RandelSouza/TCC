@@ -57,3 +57,6 @@ ant
 sudo mkdir /var/lib/floodlight
 sudo chmod 777 /var/lib/floodlight
 
+# Running Floodlight in the Terminal
+Assuming java is in your path, you can directly run the floodlight.jar file produced by ant from within the floodlight directory:
+
