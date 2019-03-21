@@ -4,3 +4,4 @@
 # as an OpenFlow switch, and can be useful for writing networking software
 # in general.
 
+# POX officially requires Python 2.7 (though much of it will work fine
