@@ -33,3 +33,5 @@ sudo apt-get install build-essential openjdk-7-jdk ant maven python-dev eclipse
 
 # Installing Floodlight from Scratch
 
+# The "git clone" step below uses the master version of Floodlight. To use a specific version, specify the version branch in the "git clone" step by appending "-b <branch-name>", e.g. "-b v1.2".
+
