@@ -10,3 +10,4 @@
 	# JDK 7 for Floodlight v1.2 and below
   # Ant or Maven to build
   # Python development package
+  # Eclipse IDE (Eclipse Luna Preferred)
