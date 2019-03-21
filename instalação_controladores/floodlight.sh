@@ -85,5 +85,6 @@ java -jar target/floodlight.jar
 # Its possible to run Mininet against the locally running Floodlight (just type "sudo mn") but you can also run it against a remote controller you built as well.  To do that, type:
 
 
+# cd mininet
 # sudo mn --controller=remote,ip=<controller ip>,port=6653 --switch ovsk,protocols=OpenFlow13
 
