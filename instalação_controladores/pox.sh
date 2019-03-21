@@ -19,3 +19,4 @@
 # locates the modules, calls their launch() function (if it exists), and
 # then transitions to the "up" state.
 
+# Modules are looked for everywhere that Python normally looks, plus the
