@@ -19,3 +19,4 @@ ryu-manager yourapp.py
 # NETCONF requires paramiko
 # BGP speaker (SSH console) requires paramiko
 # Zebra protocol service (database) requires SQLAlchemy
+# If you want to use these functions, please install the requirements:
