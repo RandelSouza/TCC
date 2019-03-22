@@ -88,3 +88,4 @@
 # You can test your controller right away without compilation:
 
 # $ ./trema run mycontroller.rb
+# This one simple trema run command enables the closed loop of "Coding, run, and debug".
