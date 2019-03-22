@@ -326,3 +326,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Create a new Eclipse workspace if you are not starting from a fresh Eclipse install
 
 # File ? Switch Workspace ? Other, pick a new folder to host the workspace
+# Set Eclipse's compliance level to 1.6
