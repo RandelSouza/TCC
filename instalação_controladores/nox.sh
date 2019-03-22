@@ -6,3 +6,4 @@
 
 # Welcome to the NOX network control platform.   This distribution
 # includes all the software you need to build, install, and deploy NOX in
+# your network, as well as source code and tools to allow you to develop
