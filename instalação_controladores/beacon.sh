@@ -300,3 +300,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # Key features:
 
+# Stable - Beacon has been in development since early 2010, and has been used in several research projects, networking classes, and trial deployments. Beacon currently powers a 100-vswitch, 20-physical switch experimental data center and has run for months without downtime.
