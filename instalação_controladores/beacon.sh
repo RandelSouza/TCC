@@ -329,3 +329,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Set Eclipse's compliance level to 1.6
 
 # Window ? Preferences ? Java ? Compiler then under JDK Compliance, change Compiler compliance level to 1.6.
+# Import the OpenFlowJ project
