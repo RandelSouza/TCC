@@ -9,3 +9,4 @@
 
 # OpenDaylight + Open Networking
 # The OpenDaylight Foundation promotes and advances the global development,
+# distribution and adoption of the ODL platform. The work we do is sustained by our members, who are committed to collaborating within an open governance framework to solve our industry’s shared challenges. Learn more about how the Project is governed, about our advisors and board of directors,
