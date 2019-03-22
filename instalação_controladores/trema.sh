@@ -99,3 +99,4 @@
 # vhost "host2"
 # link "0xabc", "host1"
 # link "0xabc", "host2"
+# # Then you can pass the network configuration to trema run.
