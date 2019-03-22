@@ -9,3 +9,4 @@
 # your network, as well as source code and tools to allow you to develop
 # your own NOX applications.
 
+# This version of NOX is a developers' release.  It is intended to provide
