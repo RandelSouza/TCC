@@ -309,3 +309,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Web UI - Beacon optionally embeds the Jetty enterprise web server and a custom extensible UI framework
 # Frameworks - Beacon builds on mature Java frameworks such as Spring and Equinox (OSGi)
 
+# Quick start
