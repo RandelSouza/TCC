@@ -368,3 +368,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # Next Steps
 # Follow the Your First Bundle guide
+# Check out the remaining Guides
