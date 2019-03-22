@@ -358,3 +358,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Expected build time: ~3.5 seconds
 
 # foo@bar:~/$ cd git/openflowj
+# foo@bar:~/git/openflowj$ mvn install
