@@ -348,3 +348,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # Run ? Debug Configurations
 # Look for the OSGi Framework on the left, expand its children and select beacon, then click Debug
+# Develop with your own editor and build using Maven
