@@ -56,3 +56,4 @@
 # Full-Stack OpenFlow Framework in Ruby and C
 # Download this project as a .zip fileDownload this project as a tar.gz file
 # Trema is a full-stack, easy-to-use framework for developing OpenFlow controllers in Ruby and C.
+# “ I poked through Trema recently. It looks like a *great* project. Very clean. ”
