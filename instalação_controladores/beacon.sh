@@ -295,3 +295,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Follow the Your First Bundle guide
 # Check out the remaining Guides
 # What is Beacon?
+# What is Beacon?
