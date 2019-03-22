@@ -13,3 +13,4 @@
 # a programmatic platform for controlling one or more OpenFlow switches.
 # NOX can be extended both in C++ and provides an abstracted interface to
 # OpenFlow.  This distribution contains a set of example applications and
+# some built in libraries which provide useful network functions such as
