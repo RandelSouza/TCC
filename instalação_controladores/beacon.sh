@@ -359,3 +359,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # foo@bar:~/$ cd git/openflowj
 # foo@bar:~/git/openflowj$ mvn install
+# Building Beacon
