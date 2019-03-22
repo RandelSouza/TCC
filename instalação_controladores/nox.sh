@@ -5,3 +5,4 @@
 # Copyright (C) 2009-2012 International Computer Science Institute, UC Berkeley 
 
 # Welcome to the NOX network control platform.   This distribution
+# includes all the software you need to build, install, and deploy NOX in
