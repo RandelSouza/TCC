@@ -306,3 +306,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Dynamic - Code bundles in Beacon can be started/stopped/refreshed/installed at runtime, without interrupting other non-dependent bundles (ie replace your running Learning Switch application without disconnecting switches).
 # Rapid Development - Beacon is easy to get up and running. Java and Eclipse simplify development and debugging of your applications.
 # Fast - Beacon is multithreaded, check out performance benchmarks.
+# Web UI - Beacon optionally embeds the Jetty enterprise web server and a custom extensible UI framework
