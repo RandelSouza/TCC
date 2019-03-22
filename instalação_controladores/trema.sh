@@ -71,3 +71,4 @@
 # $ cd trema-xyz/
 # $ bundle install
 # $ ./build.rb
+# Writing Your Own Controller
