@@ -70,3 +70,4 @@
 # $ tar xzvf trema-xyz.tar.gz
 # $ cd trema-xyz/
 # $ bundle install
+# $ ./build.rb
