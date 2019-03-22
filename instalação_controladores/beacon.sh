@@ -304,3 +304,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Cross-platform - Beacon is written in Java and runs on many platforms, from high end multi-core Linux servers to Android phones.
 # Open source - Beacon is licensed under a combination of the GPL v2 license and the Stanford University FOSS License Exception v1.0.
 # Dynamic - Code bundles in Beacon can be started/stopped/refreshed/installed at runtime, without interrupting other non-dependent bundles (ie replace your running Learning Switch application without disconnecting switches).
+# Rapid Development - Beacon is easy to get up and running. Java and Eclipse simplify development and debugging of your applications.
