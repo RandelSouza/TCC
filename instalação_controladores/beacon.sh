@@ -321,3 +321,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Develop and build using Eclipse
 # Prerequisites
 # Java 6 JDK & JRE
+# Eclipse for RCP and RAP Developers v3.7.0
