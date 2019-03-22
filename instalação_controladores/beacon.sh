@@ -336,3 +336,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # File ? Import ? General ? Existing Projects into Workspace, Select ~/git/beacon as the root directory, click ok, then select all the projects, ensure copy projects into workspace is not checked and click finish.
 # Set the target (runtime libraries)
+
