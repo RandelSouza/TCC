@@ -367,3 +367,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Jars for each bundle are available under the bundle's target/ folder. Per-platform runnable instances of Beacon are available under beacon/net.beaconcontroller.product/target/products
 
 # Next Steps
+# Follow the Your First Bundle guide
