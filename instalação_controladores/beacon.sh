@@ -302,3 +302,5 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # Stable - Beacon has been in development since early 2010, and has been used in several research projects, networking classes, and trial deployments. Beacon currently powers a 100-vswitch, 20-physical switch experimental data center and has run for months without downtime.
 # Cross-platform - Beacon is written in Java and runs on many platforms, from high end multi-core Linux servers to Android phones.
+# Open source - Beacon is licensed under a combination of the GPL v2 license and the Stanford University FOSS License Exception v1.0.
+# Dynamic - Code bundles in Beacon can be started/stopped/refreshed/installed at runtime, without interrupting other non-dependent bundles (ie replace your running Learning Switch application without disconnecting switches).
