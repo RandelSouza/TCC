@@ -21,3 +21,5 @@
 
 # Before walking you through the initial OpenDaylight installation, this guide presents a fuller picture of OpenDaylight’s framework and functionality so you understand how to set up your networking environment. The guide then takes you through the installation process.
 
+# What’s different about OpenDaylight
+# Major distinctions of OpenDaylight’s SDN compared to traditional SDN options are the following:
