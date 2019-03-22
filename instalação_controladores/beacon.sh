@@ -315,3 +315,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # Checkout the OpenFlowJ and Beacon source
 git clone https://bitbucket.org/openflowj/openflowj.git
+git clone git://gitosis.stanford.edu/beacon.git
