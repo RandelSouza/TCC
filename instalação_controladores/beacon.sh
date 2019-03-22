@@ -362,3 +362,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Building Beacon
 # Expected build time: ~1 minute 10 seconds (full build, including tests)
 
+# foo@bar:~/$ cd git/beacon/net.beaconcontroller.parent
