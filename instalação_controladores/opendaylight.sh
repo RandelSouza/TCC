@@ -27,3 +27,4 @@
 # A microservices architecture, in which a “microservice” is a particular protocol or service that a user wants to enable within their installation of the OpenDaylight controller, for example:
 # A plugin that provides connectivity to devices via the OpenFlow or BGP protocols
 # An L2-Switch or a service such as Authentication, Authorization, and Accounting (AAA).
+# Support for a wide and growing range of network protocols beyond OpenFlow, including SNMP, NETCONF, OVSDB, BGP, PCEP, LISP, and more.
