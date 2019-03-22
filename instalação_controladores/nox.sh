@@ -4,3 +4,4 @@
 # Copyright (C) 2009-2010 Stanford University
 # Copyright (C) 2009-2012 International Computer Science Institute, UC Berkeley 
 
+# Welcome to the NOX network control platform.   This distribution
