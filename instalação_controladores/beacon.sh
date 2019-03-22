@@ -343,3 +343,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Import the Beacon code style settings
 
 # Click Window ? Preferences. Then in the left column click Java ? Code Style ? Formatter, then click the Import button, and select ~/git/beacon/beacon_style_settings.xml and hit ok, then ensure the Active profile is Beacon.
+# Running
