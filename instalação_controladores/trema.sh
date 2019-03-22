@@ -95,3 +95,4 @@
 
 # One virtual switch + two virtual hosts.
 #vswitch { dpid "0xabc" }
+# vhost "host1"
