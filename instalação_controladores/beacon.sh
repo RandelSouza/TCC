@@ -355,3 +355,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Java 6 JDK & JRE
 # Maven 3.0
 # Building OpenFlowJ
+# Expected build time: ~3.5 seconds
