@@ -103,3 +103,4 @@
 
 # $ ./trema run mycontroller.rb -c network.conf
 # Sample Code
+# [trema]/src/examples/ directory includes some simple samples demonstrating Trema API usage. They are good references for understanding both Ruby and C APIs.
