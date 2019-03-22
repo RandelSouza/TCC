@@ -75,3 +75,4 @@
 # Trema OpenFlow Controller are simple Ruby scripts. Write your own OpenFlow controller by adding message handlers to your controller class just like Rails.
 
 # class MyController < Controller
+#   def packet_in dpid, message  # packet_in message handler
