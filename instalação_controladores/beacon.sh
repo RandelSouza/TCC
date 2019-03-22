@@ -365,3 +365,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # foo@bar:~/$ cd git/beacon/net.beaconcontroller.parent
 # foo@bar:~/git/beacon/net.beaconcontroller.parent$ mvn integration-test
 # Jars for each bundle are available under the bundle's target/ folder. Per-platform runnable instances of Beacon are available under beacon/net.beaconcontroller.product/target/products
+
