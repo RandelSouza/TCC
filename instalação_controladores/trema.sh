@@ -68,3 +68,4 @@
 # If you prefer manual installation, download .tgz or .zip from the link in the upper right corner and build it as follows:
 
 # $ tar xzvf trema-xyz.tar.gz
+# $ cd trema-xyz/
