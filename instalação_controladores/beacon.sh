@@ -320,3 +320,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # Develop and build using Eclipse
 # Prerequisites
+# Java 6 JDK & JRE
