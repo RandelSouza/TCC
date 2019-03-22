@@ -331,3 +331,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Window ? Preferences ? Java ? Compiler then under JDK Compliance, change Compiler compliance level to 1.6.
 # Import the OpenFlowJ project
 
+# File ? Import ? General ? Existing Projects into Workspace, Select ~/git/openflowj as the root directory, click ok, then select all the projects, ensure copy projects into workspace is not checked and click finish.
