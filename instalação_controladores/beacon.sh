@@ -352,3 +352,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Please note, Maven resolves, downloads, and caches all libraries needed for building at runtime, so the first build must download many libraries and its runtime is not representative of what you would see in your daily workflow.
 
 # Prerequisites
+# Java 6 JDK & JRE
