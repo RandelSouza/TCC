@@ -65,3 +65,4 @@
 # Installation is very easy. Run gem install trema and straight away you have a working Trema installation.
 
 # $ gem install trema
+# If you prefer manual installation, download .tgz or .zip from the link in the upper right corner and build it as follows:
