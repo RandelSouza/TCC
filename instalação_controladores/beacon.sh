@@ -346,3 +346,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Running
 # Launch Beacon in debug mode
 
+# Run ? Debug Configurations
