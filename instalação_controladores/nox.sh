@@ -18,3 +18,4 @@
 
 # *Note*
 
+# NOX relies on OpenFlow as the communication protocol for controlling
