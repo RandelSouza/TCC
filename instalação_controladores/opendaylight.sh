@@ -36,3 +36,4 @@
 # What you’ll find in this guide
 # To set up your environment, you first install OpenDaylight followed by the Apache Karaf features that offer the functionality you require. The OpenDaylight Getting Started Guide covers feature descriptions, OpenDaylight installation procedures, and feature installation.
 
+# The Getting Started Guide also includes other helpful information, with the following organization:
