@@ -328,3 +328,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # File ? Switch Workspace ? Other, pick a new folder to host the workspace
 # Set Eclipse's compliance level to 1.6
 
+# Window ? Preferences ? Java ? Compiler then under JDK Compliance, change Compiler compliance level to 1.6.
