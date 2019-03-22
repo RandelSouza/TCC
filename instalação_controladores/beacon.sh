@@ -312,3 +312,5 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Quick start
 
 # encourage you to watch the screencast in fullscreen mode, with the video set to 720p or 1080p, it was recorded natively at 1080p.
+
+# Checkout the OpenFlowJ and Beacon source
