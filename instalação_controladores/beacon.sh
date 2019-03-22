@@ -310,3 +310,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Frameworks - Beacon builds on mature Java frameworks such as Spring and Equinox (OSGi)
 
 # Quick start
+
