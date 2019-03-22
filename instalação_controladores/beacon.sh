@@ -338,3 +338,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Set the target (runtime libraries)
 
 # Open the Beacon Main Target project, double click the main.target file.
+# Once opened, down in the right hand corner of Eclipse you should see a message saying Resolving Target Definition, wait for this to complete before proceeding.
