@@ -318,3 +318,4 @@ git clone https://bitbucket.org/openflowj/openflowj.git
 git clone git://gitosis.stanford.edu/beacon.git
 # For guide purposes we will assume these are checked out to ~/git/beacon and ~/git/openflowj
 
+# Develop and build using Eclipse
