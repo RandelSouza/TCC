@@ -341,3 +341,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Once opened, down in the right hand corner of Eclipse you should see a message saying Resolving Target Definition, wait for this to complete before proceeding.
 # After the target has been resolved, click Set as Target Platform in the top right corner of the main.target window. (Note if you click before it has been resolved, you will receive an error). At this point all compilation errors should be gone.
 # Import the Beacon code style settings
+
