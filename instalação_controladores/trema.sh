@@ -97,3 +97,4 @@
 #vswitch { dpid "0xabc" }
 # vhost "host1"
 # vhost "host2"
+# link "0xabc", "host1"
