@@ -307,3 +307,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Rapid Development - Beacon is easy to get up and running. Java and Eclipse simplify development and debugging of your applications.
 # Fast - Beacon is multithreaded, check out performance benchmarks.
 # Web UI - Beacon optionally embeds the Jetty enterprise web server and a custom extensible UI framework
+# Frameworks - Beacon builds on mature Java frameworks such as Spring and Equinox (OSGi)
