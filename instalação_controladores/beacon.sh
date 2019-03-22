@@ -363,3 +363,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Expected build time: ~1 minute 10 seconds (full build, including tests)
 
 # foo@bar:~/$ cd git/beacon/net.beaconcontroller.parent
+# foo@bar:~/git/beacon/net.beaconcontroller.parent$ mvn integration-test
