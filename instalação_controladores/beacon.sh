@@ -324,3 +324,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 # Eclipse for RCP and RAP Developers v3.7.0
 # Setup
 # Create a new Eclipse workspace if you are not starting from a fresh Eclipse install
+
