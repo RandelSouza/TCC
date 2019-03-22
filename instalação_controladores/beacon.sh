@@ -353,3 +353,4 @@ git clone git://gitosis.stanford.edu/beacon.git
 
 # Prerequisites
 # Java 6 JDK & JRE
+# Maven 3.0
