@@ -91,3 +91,4 @@
 # This one simple trema run command enables the closed loop of "Coding, run, and debug".
 
 # Network Emulator
+# With Trema network DSL, you can describe the network topology in which the controller is executed.
