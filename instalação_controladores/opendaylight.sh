@@ -24,3 +24,4 @@
 # What’s different about OpenDaylight
 # Major distinctions of OpenDaylight’s SDN compared to traditional SDN options are the following:
 
+# A microservices architecture, in which a “microservice” is a particular protocol or service that a user wants to enable within their installation of the OpenDaylight controller, for example:
