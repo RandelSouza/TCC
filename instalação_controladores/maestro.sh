@@ -87,3 +87,4 @@
 # [virtual-machine]$ wget THE_COPIED_URL [virtual-machine]$ chmod +x jdk-6u22-linux-i586.bin [virtual-machine]$ ./jdk-6u22-linux-i586.bin
 
 # After expanding and installing the JDK binary, you should also set the $JAVA_HOME environment variable. For bash users, you can add
+
