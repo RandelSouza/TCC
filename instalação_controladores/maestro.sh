@@ -83,3 +83,4 @@
 
 # Maestro is based on Java, so to be able to run Maestro you first need to have a Java environment.
 # What we suggest to do is download the latest JDK from here to the virtual machine. Choose the right binary according to what operating system you have. For the Ubuntu 32bit, you can first copy the url to the installation file "jdk-6u22-linux-i586.bin", and then do:
+
