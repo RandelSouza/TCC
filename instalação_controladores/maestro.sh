@@ -18,3 +18,4 @@
 # Developed in Java (both the platform and the components) – Highly portable to various operating systems and architectures.
 # Multi-threaded – Takes full advantage of multi-core processors.
 # Maestro currently provides the control components for realizing either a learning switch network, or a routed network using OpenFlow switches. Some components such as the command line console, etc, are still not full-fledged. We plan to further enrich and enhance the functionality of Maestro in future releases. Notice that Maestro is licensed under the GNU Lesser General Public License version 2.1. Google-project’s LGPL directs only to the version 3, so we make it explicit here that Maestro # # is licensed under LGPL v2.1.
+#----------------------------------------------------------------------------------------------------------------------------------------------#
