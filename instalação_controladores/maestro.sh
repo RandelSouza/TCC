@@ -75,3 +75,4 @@
 
 # After done all of these previous steps, you have already successfully created a virtual OpenFlow network environment!
 # Now we are right at before the Start Controller and view Startup messages in Wireshark section in the OpenFlowTutorial.
+# You can definitely continue following that tutorial and try their basic controller and NOX. But since this tutorial is about
