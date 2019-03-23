@@ -156,3 +156,4 @@
 # releases to let Maestro be able to listen on IPv6 port addresses.
 
 # And that will be all of the tutorial~ Hope you enjoy it. For more detailed information about Maestro,
+#  please check out the design document, and all other papers. Please feel free to send us emails about any problems you may encounter. Thanks again for choosing Maestro :)
