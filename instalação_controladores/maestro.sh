@@ -122,3 +122,4 @@
 # [virtual-machine]$ ant javadoc
 
 # These webpage files will be in the "javadoc/" directory, which you can open with a web browser to see all
+#  the documentations of the code. To clean up the build, just run
