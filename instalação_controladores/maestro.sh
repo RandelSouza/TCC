@@ -7,3 +7,4 @@
 # The programming framework of Maestro provides interfaces for:
 
 # Introducing new customized control functions by adding modularized control components.
+# Maintaining network state on behalf of the control components.
