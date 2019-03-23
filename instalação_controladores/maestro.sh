@@ -22,3 +22,4 @@
 
 # Introduction
 # Thanks for trying Maestro! This short tutorial prepares you with the basic knowledge about how to use Maestro
+# as an OpenFlow controller. Because it is an OpenFlow controller, this tutorial heavily relies on the latest OpenFlowTutorial.
