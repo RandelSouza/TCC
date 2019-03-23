@@ -85,3 +85,4 @@
 # What we suggest to do is download the latest JDK from here to the virtual machine. Choose the right binary according to what operating system you have. For the Ubuntu 32bit, you can first copy the url to the installation file "jdk-6u22-linux-i586.bin", and then do:
 
 # [virtual-machine]$ wget THE_COPIED_URL [virtual-machine]$ chmod +x jdk-6u22-linux-i586.bin [virtual-machine]$ ./jdk-6u22-linux-i586.bin
+
