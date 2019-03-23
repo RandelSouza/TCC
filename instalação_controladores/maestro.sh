@@ -50,3 +50,4 @@
 
 # Change directory to the image directory and start the virtual machine by:
 # [host-machine]$ cd OpenFlowVM.vmwarevm [host-machine]$ vmplayer OpenFlowVM.vmx
+
