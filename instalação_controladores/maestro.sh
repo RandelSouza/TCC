@@ -111,3 +111,4 @@
 
 # For Windows users or you can choose to download and install it manually from here.
 
+# Yes, that will be all the dependencies! The next step is downloading the Maestro code here. After done this,
