@@ -55,3 +55,4 @@
 # you will get a window for the virtual machine with a shell terminal running. Run:
 
 # [virtual-machine]$ ifconfig eth0
+
