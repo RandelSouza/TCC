@@ -62,3 +62,4 @@
 # [host-machine]$ ssh openflow@192.168.212.128
 
 # Inside such a SSH terminal connected to the virtual machine (or the original windowed virtual machine terminal),
+#  start a network topology using mininet by:
