@@ -150,3 +150,4 @@
 
 # If your operating system in which you would like to run Maestro has IPv6 enabled, run:
 
+# $JAVA_HOME/bin/java -Djava.net.preferIPv4Stack=true -cp build/ sys.Main conf/openflow.conf conf/learningswitch.dag 1
