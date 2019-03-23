@@ -12,3 +12,4 @@
 # Moreover, Maestro tries to exploit parallelism within a single machine to improve the system’s throughput performance.
 # The fundamental feature of an OpenFlow network is that the controller is responsible for every flow’s initial establishment
 # by contacting related switches. Thus the performance of the controller could be the bottleneck.
+# In designing Maestro we try to require as little effort from programmers as possible to manage the parallelization.
