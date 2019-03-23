@@ -51,3 +51,4 @@
 # Change directory to the image directory and start the virtual machine by:
 # [host-machine]$ cd OpenFlowVM.vmwarevm [host-machine]$ vmplayer OpenFlowVM.vmx
 
+# Both the username and the password are "openflow". After the virtual machine boots,
