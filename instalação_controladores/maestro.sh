@@ -48,3 +48,4 @@
 
 # It will pop up the dialog to finish the installation. Just default settings will work.
 
+# Change directory to the image directory and start the virtual machine by:
