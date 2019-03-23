@@ -56,3 +56,4 @@
 
 # [virtual-machine]$ ifconfig eth0
 
+# to get the virtual machine's IP address. For example, you will get something like "192.168.212.128".
