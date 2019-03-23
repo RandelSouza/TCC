@@ -30,3 +30,4 @@
 # you can skip this OpenFlowTutorial section below and go directly with Maestro.
 
 # The OpenFlowTutorial - Setup the Virtual OpenFlow Environment
+# As a quick summary of the OpenFlowTutorial, you basically need to follow these steps below to setup
