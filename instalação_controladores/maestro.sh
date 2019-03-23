@@ -127,3 +127,4 @@
 # [virtual-machine]$ ant clean
 
 # To run Maestro, you need to provide two configuration files. First one is a configuration
+#  file which contains a bunch of parameter numbers. There is one example file which can also be used as default
