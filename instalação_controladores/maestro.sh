@@ -27,3 +27,4 @@
 # to be able to run Maestro to control the switches inside it. For a complete explanation about setting setup a virtual machine
 # and the emulated network topology, and for all other kinds of operating systems you are using, please check the OpenFlowTutorial
 # to know more details. Of course if you are already very familiar with OpenFlow or you are already running your own OpenFlow network
+# you can skip this OpenFlowTutorial section below and go directly with Maestro.
