@@ -112,3 +112,4 @@
 # For Windows users or you can choose to download and install it manually from here.
 
 # Yes, that will be all the dependencies! The next step is downloading the Maestro code here. After done this,
+# unzip it so you get the "Maestro-0.1.0" directory. This will be the Maestro working directory. To build the entire project, just run:
