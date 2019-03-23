@@ -142,3 +142,4 @@
 # Then you will see the Maestro command console, which at this point has very limited functionalities.
 #  (If the last argument is 0, then the command console will not be started.) For example, in the console, you can type
 
+# [virtual-machine]Maestro> print Please input the name of the view instance: [virtual-machine]Maestro> switches
