@@ -37,3 +37,4 @@
 # [host-machine]$ unzip OpenFlowTutorial-081910.vmware.zip
 
 # and you will get a directory named "OpenFlowVM.vmwarevm", which we call the image directory from now on.
+
