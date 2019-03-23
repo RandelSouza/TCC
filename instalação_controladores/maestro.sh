@@ -13,3 +13,4 @@
 # The fundamental feature of an OpenFlow network is that the controller is responsible for every flow’s initial establishment
 # by contacting related switches. Thus the performance of the controller could be the bottleneck.
 # In designing Maestro we try to require as little effort from programmers as possible to manage the parallelization.
+# Instead Maestro handles most of the tedious and complicated job of managing work load distribution and worker threads scheduling. By design Maestro is both portable and scalable:
