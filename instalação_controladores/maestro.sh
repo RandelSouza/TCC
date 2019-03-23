@@ -65,3 +65,4 @@
 #  start a network topology using mininet by:
 # v[virtual-machine]$ sudo mn --topo single,3 --mac --switch ovsk --controller remote
 
+# This creates a network with one OpenFlow switch and three hosts described in the Start Network section in the OpenFlowTutorial.
