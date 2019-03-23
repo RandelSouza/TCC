@@ -130,3 +130,4 @@
 #  file which contains a bunch of parameter numbers. There is one example file which can also be used as default
 # parameter settings, the "conf/openflow.conf" file. See Using and Programming in Maestro for detailed discussion.
 # The second file is the DAG configuration file. Two examples are provided: "learningswitch.dag" and "routing.dag".
+# As indicated by their names, in them applications related to build a learning-switch like network, and a routing
