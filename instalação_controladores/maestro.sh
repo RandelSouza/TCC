@@ -91,3 +91,4 @@
 # export JAVA_HOME=/the/path/to/where/you/installed/your/JDK
 
 # into your ~/.bashrc file.
+
