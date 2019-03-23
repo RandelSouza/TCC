@@ -24,3 +24,4 @@
 # Thanks for trying Maestro! This short tutorial prepares you with the basic knowledge about how to use Maestro
 # as an OpenFlow controller. Because it is an OpenFlow controller, this tutorial heavily relies on the latest OpenFlowTutorial.
 # In this tutorial we are only going to shown you the most straight-forward way of setting up one such virtual environment using Ubuntu Linux 32bit
+# to be able to run Maestro to control the switches inside it. For a complete explanation about setting setup a virtual machine
