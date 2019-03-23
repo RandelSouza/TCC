@@ -89,3 +89,4 @@
 # After expanding and installing the JDK binary, you should also set the $JAVA_HOME environment variable. For bash users, you can add
 
 # export JAVA_HOME=/the/path/to/where/you/installed/your/JDK
+
