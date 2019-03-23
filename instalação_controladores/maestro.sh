@@ -63,3 +63,4 @@
 
 # Inside such a SSH terminal connected to the virtual machine (or the original windowed virtual machine terminal),
 #  start a network topology using mininet by:
+# v[virtual-machine]$ sudo mn --topo single,3 --mac --switch ovsk --controller remote
