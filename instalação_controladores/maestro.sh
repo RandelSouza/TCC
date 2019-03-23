@@ -92,3 +92,4 @@
 
 # into your ~/.bashrc file.
 
+# If you do not want to manually install JDK, you can also just run (for Debian OSes)
