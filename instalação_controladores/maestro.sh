@@ -6,3 +6,4 @@
 # an OpenFlow controller using Maestro, Maestro is not only limited to OpenFlow networks.
 # The programming framework of Maestro provides interfaces for:
 
+# Introducing new customized control functions by adding modularized control components.
