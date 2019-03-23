@@ -38,3 +38,4 @@
 
 # and you will get a directory named "OpenFlowVM.vmwarevm", which we call the image directory from now on.
 
+# Install VMPlayer. You need to register for an evaluation version. For example,
