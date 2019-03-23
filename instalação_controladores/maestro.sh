@@ -105,3 +105,4 @@
 
 # [virtual-machine]$ sudo apt-get update [virtual-machine]$ sudo apt-get install ant
 
+# For RPM-compatible OSes, you can run
