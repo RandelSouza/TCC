@@ -44,3 +44,4 @@
 
 # Then, execute this file by:
 
+# [host-machine]$ sudo ./VMware-Player-3.1.3-324285.i386.bundle
