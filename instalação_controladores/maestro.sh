@@ -74,3 +74,4 @@
 # Of course, because now we don't have a working controller, the switch is not functioning, thus the ping will fail.
 
 # After done all of these previous steps, you have already successfully created a virtual OpenFlow network environment!
+# Now we are right at before the Start Controller and view Startup messages in Wireshark section in the OpenFlowTutorial.
