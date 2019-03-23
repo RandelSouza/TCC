@@ -146,3 +146,4 @@
 
 # to print out information about all connected OpenFlow switches in the network.
 
+# After starting Maestro, you will see the two switches get connected to the controller, and then you can let one end host to ping the other one to verify that it works. Then you probably also want to try the routing version of Maestro. You can use all utilities provided by the OpenFlowTutorial to trace all the OpenFlow protocol messages exchanged between the controller and the switches, and use tcpdump to trace data plane packets within the network.
