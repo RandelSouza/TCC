@@ -21,3 +21,4 @@
 #----------------------------------------------------------------------------------------------------------------------------------------------#
 
 # Introduction
+# Thanks for trying Maestro! This short tutorial prepares you with the basic knowledge about how to use Maestro
