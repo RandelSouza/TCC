@@ -33,3 +33,4 @@
 # As a quick summary of the OpenFlowTutorial, you basically need to follow these steps below to setup
 # an emulated virtual OpenFlow network environment:
 
+# Download the VM image file from here. Then in your host machine, run:
