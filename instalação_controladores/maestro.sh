@@ -132,3 +132,4 @@
 # The second file is the DAG configuration file. Two examples are provided: "learningswitch.dag" and "routing.dag".
 # As indicated by their names, in them applications related to build a learning-switch like network, and a routing
 # network are composed to fulfill the correct # functionality. More details about this can also be found in the design
+#  document of Maestro: Using and Programming in Maestro
