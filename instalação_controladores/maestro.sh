@@ -100,3 +100,4 @@
 
 # [virtual-machine]$ sudo yum update [virtual-machine]$ sudo yum install java-1.6.0-openjdk
 
+# Next, because Maestro relies on Apache Ant to manage compilation of the code, you need to install
