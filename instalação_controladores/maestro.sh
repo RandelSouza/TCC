@@ -95,3 +95,5 @@
 # If you do not want to manually install JDK, you can also just run (for Debian OSes)
 
 # [virtual-machine]$ sudo apt-get update [virtual-machine]$ sudo apt-get install openjdk-6-jdk
+
+# or for RPM-compatible OSes, you can run
