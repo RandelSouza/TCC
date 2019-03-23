@@ -78,3 +78,5 @@
 # You can definitely continue following that tutorial and try their basic controller and NOX. But since this tutorial is about
 #  Maestro, we will use this virtual OpenFlow network environment to try Maestro instead. Let's go~
 
+# Run Maestro
+# What we are going to do is to replace all the default controller and NOX part in the OpenFlowTutorial with Maestro.
