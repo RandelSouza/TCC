@@ -41,3 +41,4 @@
 # Install VMPlayer. You need to register for an evaluation version. For example,
 #  for the Ubuntu 32bit version, you will download the file named "VMware-Player-3.1.3-324285.i386.bundle". Then add execute permission to this file by:
 # [host-machine]$ chmod +x VMware-Player-3.1.3-324285.i386.bundle
+
