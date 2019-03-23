@@ -11,3 +11,4 @@
 # Composing control components by specifying the execution sequencing and the shared network state of the components.
 # Moreover, Maestro tries to exploit parallelism within a single machine to improve the system’s throughput performance.
 # The fundamental feature of an OpenFlow network is that the controller is responsible for every flow’s initial establishment
+# by contacting related switches. Thus the performance of the controller could be the bottleneck.
