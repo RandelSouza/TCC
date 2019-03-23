@@ -15,3 +15,4 @@
 # In designing Maestro we try to require as little effort from programmers as possible to manage the parallelization.
 # Instead Maestro handles most of the tedious and complicated job of managing work load distribution and worker threads scheduling. By design Maestro is both portable and scalable:
 
+# Developed in Java (both the platform and the components) – Highly portable to various operating systems and architectures.
