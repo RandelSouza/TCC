@@ -70,3 +70,4 @@
 
 # In the mininet console, you can try to let host h2 ping h3 to see whether they can talk to each other by:
 # [virtual-machine]mininet> h2 ping -c3 h3
+
