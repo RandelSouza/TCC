@@ -99,3 +99,4 @@
 # or for RPM-compatible OSes, you can run
 
 # [virtual-machine]$ sudo yum update [virtual-machine]$ sudo yum install java-1.6.0-openjdk
+
