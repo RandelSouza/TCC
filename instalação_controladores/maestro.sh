@@ -97,3 +97,4 @@
 # [virtual-machine]$ sudo apt-get update [virtual-machine]$ sudo apt-get install openjdk-6-jdk
 
 # or for RPM-compatible OSes, you can run
+
