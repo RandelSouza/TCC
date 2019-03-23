@@ -47,3 +47,4 @@
 # [host-machine]$ sudo ./VMware-Player-3.1.3-324285.i386.bundle
 
 # It will pop up the dialog to finish the installation. Just default settings will work.
+
