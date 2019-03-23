@@ -2,3 +2,4 @@
 # Maestro provides interfaces for implementing modular network control applications
 # to access and modify state of the network, and coordinate their interactions.
 # Maestro is a platform for achieving automatic and programmatic network control
+# functions using these modularized applications. Although this project focuses on building
