@@ -138,3 +138,4 @@
 
 # [virtual-machine]$ $JAVA_HOME/bin/java -cp build/ sys.Main conf/openflow.conf conf/learningswitch.dag 1
 
+# to start the system. The last argument, "1" means that we want to run Maestro in interactive mode.
