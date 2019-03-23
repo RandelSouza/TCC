@@ -81,3 +81,4 @@
 # Run Maestro
 # What we are going to do is to replace all the default controller and NOX part in the OpenFlowTutorial with Maestro.
 
+# Maestro is based on Java, so to be able to run Maestro you first need to have a Java environment.
