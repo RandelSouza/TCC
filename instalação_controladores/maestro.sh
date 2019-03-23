@@ -59,3 +59,4 @@
 # to get the virtual machine's IP address. For example, you will get something like "192.168.212.128".
 # This will be the IP address that you use SSH to connect to this virtual machine from the local host machine, by:
 
+# [host-machine]$ ssh openflow@192.168.212.128
