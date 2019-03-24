@@ -28,3 +28,4 @@ returnParamsChecklist "$gostos"
 
 #msgBoxAndBacktitle "Tela de Inicio" "Bem vindo!"
 #msgBoxAndBacktitle "Testando" "Olá!"
+#exitAplication
