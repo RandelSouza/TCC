@@ -23,3 +23,4 @@ gostos=$(dialog --stdout 		              --separate-output                      
 }
 
 
+clear
