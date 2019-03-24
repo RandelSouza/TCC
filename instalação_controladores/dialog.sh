@@ -14,3 +14,4 @@ function returnParamsChecklist(){
 echo "$1" | while read LINHA
 do
 echo "$LINHA"
+done
