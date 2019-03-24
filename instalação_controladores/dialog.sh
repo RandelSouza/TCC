@@ -6,3 +6,4 @@ clear
 exit 1
 }
 
+function msgBoxAndBacktitle(){
