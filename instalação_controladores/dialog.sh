@@ -25,3 +25,4 @@ gostos=$(dialog --stdout 		              --separate-output                      
 
 clear
 returnParamsChecklist "$gostos"
+
