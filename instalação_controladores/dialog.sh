@@ -20,3 +20,4 @@ done
 function checklist(){
 # Deixa
 gostos=$(dialog --stdout 		              --separate-output                      		              --backtitle 'Aperte space para selecionar ou retirar a seleção de uma caixa'		              --checklist 'Do que você gosta?' 0 0 0 	                'jogar futebol'      '' off 	                'pescar'             '' off 	                'ir ao shopping'     '' off 	                'andar de bicicleta' '' off 	                'ficar na internet'  '' off 	                'dormir'             '' off )
+}
