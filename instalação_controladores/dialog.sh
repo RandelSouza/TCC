@@ -17,3 +17,4 @@ echo "$LINHA"
 done
 }
 
+function checklist(){
