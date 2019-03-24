@@ -26,3 +26,4 @@ gostos=$(dialog --stdout 		              --separate-output                      
 clear
 returnParamsChecklist "$gostos"
 
+#msgBoxAndBacktitle "Tela de Inicio" "Bem vindo!"
