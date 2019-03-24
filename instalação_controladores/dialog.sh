@@ -18,3 +18,4 @@ done
 }
 
 function checklist(){
+# Deixa
