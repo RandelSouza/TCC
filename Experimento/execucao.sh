@@ -6,7 +6,7 @@ source ./mininet_wifi.sh
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
 
 controllerSDN=(Ryu Floodlight POX)
-quantityNodes=(1 2 3 5 9 14)
+nodesQuantity=(1 2 3 5 9 14)
 
 for controller in "${controllerSDN[@]}"
 do
@@ -24,7 +24,7 @@ do
     	;;
 
 		"Floodlight")
-			for quantity in "${quantityNodes[@]}"
+			for quantity in "${nodesQuantity[@]}"
 			do
 				echo "Entrando no controlador: $controller, Número de nós: $quantity";
 				echo
