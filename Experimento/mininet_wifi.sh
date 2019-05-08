@@ -7,5 +7,4 @@ function topology(){
 	# $4 - nodesQuantity
 	cd /home/mininet-wifi/examples
 	sudo python iot4.py $1 $2 $3 $4
-
 }

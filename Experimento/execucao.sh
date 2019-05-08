@@ -6,7 +6,7 @@ source ./mininet_wifi.sh
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
 
 controllerSDN=(Ryu Floodlight POX)
-nodesQuantity=(1 2 3 5 9 14)
+nodesQuantity=(2 3 5 9 14)
 
 for controller in "${controllerSDN[@]}"
 do
@@ -40,12 +40,12 @@ do
 
 				while [ $(ps -ef | grep "jar target/floodlight.jar" | wc -l) -eq 2 ];
 				do
-					# echo  $(ps -ef | grep "target/floodlight.jar" | wc -l)
-					echo "Experimento do controlador $controller ainda está sendo realizado..."
+					#echo  $(ps -ef | grep "target/floodlight.jar" | wc -l)
+					echo "Experimento do controlador $controller com $quantity nós executando"
 					sleep 2
 				done
-
-				echo "Experimento do controlador $controller finalizado!"
+				clear
+				echo "Experimento do controlador $controller com $quantity nós finalizado!"
 			done
 
     	;;
@@ -67,3 +67,6 @@ do
     	;;
     esac
 done
+
+clear
+echo "Todos os experimentos foram finalizados!!!"
