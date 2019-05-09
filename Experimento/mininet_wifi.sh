@@ -6,5 +6,7 @@ function topology(){
 	# $3 - nameController
 	# $4 - nodesQuantity
 	cd /home/mininet-wifi/examples
-	sudo python iot4.py $1 $2 $3 $4
+	sudo python iot.py 2>  errorMn.txt
+	sudo python iot.py 2>  errorMn.txt
+	sudo python iot4.py $1 $2 $3 $4 2>>  errorIoT4.txt > /dev/null
 }

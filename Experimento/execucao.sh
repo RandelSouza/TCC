@@ -26,17 +26,17 @@ do
 				echo
 				cd /home/ryu;
 				echo "Inicializando o controlador: " $controller;
-				touch log_experimento_execucao$controller.txt
-				sudo PYTHONPATH=. ./bin/ryu run --observe-links ryu/app/gui_topology/gui_topology.py --ofp-tcp-listen-port=6636 >> log_experimento_execucao$controller.txt &
+				touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
+				sudo PYTHONPATH=. ./bin/ryu run --observe-links ryu/app/gui_topology/gui_topology.py --ofp-tcp-listen-port=6636 2>> log_experimento_execucao$controller.txt > /dev/null &
 
 				sleep 10
 
 				echo "Estartando o mininet wifi e criando uma topologia simples...."
 				topology 127.0.0.1 6636 Ryu $quantity &
 
-				while [ $(ps -ef | grep "jar target/floodlight.jar" | wc -l) -eq 2 ];
+				while [ $(ps -ef | grep "PYTHONPATH=. ./bin/ryu run --observe-links ryu/app/gui_topology/gui_topology.py --ofp-tcp-listen-port=6636" | wc -l) -eq 3 ];
 				do
-					echo "Número de processos: " $(expr $(ps -ef | grep "jar target/floodlight.jar" | wc -l) - 1)
+					echo "Número de processos: " $(expr $(ps -ef | grep "PYTHONPATH=. ./bin/ryu run --observe-links ryu/app/gui_topology/gui_topology.py --ofp-tcp-listen-port=6636" | wc -l) - 1)
 					echo "Experimento do controlador $controller com $quantity nós executando"
 					sleep 2
 				done
@@ -53,8 +53,8 @@ do
 				echo
 				cd /home/floodlight;
 				echo "Inicializando o controlador: " $controller;
-				touch log_experimento_execucao$controller.txt
-				java -jar target/floodlight.jar >> log_experimento_execucao$controller.txt &
+				touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
+				java -jar target/floodlight.jar 2>> log_experimento_execucao$controller.txt > /dev/null &
 
 				sleep 10
 
@@ -67,7 +67,6 @@ do
 					echo "Experimento do controlador $controller com $quantity nós executando"
 					sleep 2
 				done
-				clear
 				echo "Experimento do controlador $controller com $quantity nós finalizado!"
 			done
 
@@ -81,8 +80,8 @@ do
 				echo
 				cd /home/pox;
 				echo "Inicializando o controlador: " $controller;
-				touch log_experimento_execucao$controller.txt
-				sudo ./pox.py pox.forwarding.hub openflow.of_01 --port=6635 >> log_experimento_execucao$controller.txt &
+				touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
+				sudo ./pox.py pox.forwarding.hub openflow.of_01 --port=6635 2>> log_experimento_execucao$controller.txt > /dev/null &
 
 				sleep 10
 
@@ -95,7 +94,6 @@ do
 					echo "Experimento do controlador $controller com $quantity nós executando"
 					sleep 2
 				done
-				clear
 				echo "Experimento do controlador $controller com $quantity nós finalizado!"
 			done
     	;;
@@ -114,5 +112,4 @@ do
     esac
 done
 
-clear
 echo "Todos os experimentos foram finalizados!!!"
