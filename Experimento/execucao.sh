@@ -5,7 +5,7 @@ source ./mininet_wifi.sh
 # O Segundo fator é o número de nós IoT
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
 
-controllerSDN=(Ryu  POX) #Floodlight
+controllerSDN=( POX ) # Ryu Floodlight
 nodesQuantity=(2 5 10)
 
 for controller in "${controllerSDN[@]}"
