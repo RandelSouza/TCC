@@ -5,7 +5,7 @@ source ./mininet_wifi.sh
 # O Segundo fator é o número de nós IoT
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
 
-controllerSDN=(Ryu Floodlight POX)
+controllerSDN=(Ryu  POX) #Floodlight
 nodesQuantity=(2 5 10)
 
 for controller in "${controllerSDN[@]}"
@@ -59,21 +59,21 @@ do
 			do
 				echo "Entrando no controlador: $controller, Número de nós: $quantity";
 				echo
-				cd /home/floodlight;
+				cd /home/pox;
 				echo "Inicializando o controlador: " $controller;
 				touch log_experimento_execucao$controller.txt
-				#java -jar target/floodlight.jar >> log_experimento_execucao$controller.txt &
+				sudo ./pox.py pox.forwarding.hub openflow.of_01 --port=6635 >> log_experimento_execucao$controller.txt &
 
 				sleep 10
 
 				echo "Estartando o mininet wifi e criando uma topologia simples...."
-				topology 127.0.0.1 6653 Floodlight $quantity &
+				topology 127.0.0.1 6635 POX $quantity &
 
 				#echo "Número de processos: " $(expr $(ps -ef | grep "jar target/floodlight.jar" | wc -l) - 1)
 
-				while [ $(ps -ef | grep "jar target/floodlight.jar" | wc -l) -eq 2 ];
+				while [ $(ps -ef | grep "pox.py pox.forwarding.hub openflow.of_01" | wc -l) -eq 2 ];
 				do
-					echo "Número de processos: " $(expr $(ps -ef | grep "jar target/floodlight.jar" | wc -l) - 1)
+					echo "Número de processos: " $(expr $(ps -ef | grep "pox.py pox.forwarding.hub openflow.of_01" | wc -l) - 1)
 					#echo  $(ps -ef | grep "target/floodlight.jar" | wc -l)
 					echo "Experimento do controlador $controller com $quantity nós executando"
 					sleep 2
