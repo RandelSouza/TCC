@@ -25,7 +25,7 @@ do
 
 		"Floodlight")
 			for quantity in "${nodesQuantity[@]}"
-			do				
+			do
 				echo "Entrando no controlador: $controller, Número de nós: $quantity";
 				echo
 				cd /home/floodlight;
@@ -55,6 +55,32 @@ do
 
 		"POX")
 			#echo "sim " $controller;
+			for quantity in "${nodesQuantity[@]}"
+			do
+				echo "Entrando no controlador: $controller, Número de nós: $quantity";
+				echo
+				cd /home/floodlight;
+				echo "Inicializando o controlador: " $controller;
+				touch log_experimento_execucao$controller.txt
+				#java -jar target/floodlight.jar >> log_experimento_execucao$controller.txt &
+
+				sleep 10
+
+				echo "Estartando o mininet wifi e criando uma topologia simples...."
+				topology 127.0.0.1 6653 Floodlight $quantity &
+
+				#echo "Número de processos: " $(expr $(ps -ef | grep "jar target/floodlight.jar" | wc -l) - 1)
+
+				while [ $(ps -ef | grep "jar target/floodlight.jar" | wc -l) -eq 2 ];
+				do
+					echo "Número de processos: " $(expr $(ps -ef | grep "jar target/floodlight.jar" | wc -l) - 1)
+					#echo  $(ps -ef | grep "target/floodlight.jar" | wc -l)
+					echo "Experimento do controlador $controller com $quantity nós executando"
+					sleep 2
+				done
+				clear
+				echo "Experimento do controlador $controller com $quantity nós finalizado!"
+			done
     	;;
 
 		"Maestro")
