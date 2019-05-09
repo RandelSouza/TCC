@@ -6,7 +6,7 @@ source ./mininet_wifi.sh
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
 
 controllerSDN=(Ryu Floodlight POX)
-nodesQuantity=(2 3 5 9 14)
+nodesQuantity=(2 5 10 2 5 10 2 5 10 2 5 10)
 
 for controller in "${controllerSDN[@]}"
 do
@@ -26,6 +26,8 @@ do
 		"Floodlight")
 			for quantity in "${nodesQuantity[@]}"
 			do
+				#sudo /etc/init.d/network-manager restart >> /dev/null
+				#sleep 15
 				echo "Entrando no controlador: $controller, Número de nós: $quantity";
 				echo
 				cd /home/floodlight;
@@ -38,8 +40,11 @@ do
 				echo "Estartando o mininet wifi e criando uma topologia simples...."
 				topology 127.0.0.1 6653 Floodlight $quantity &
 
+				#echo "Número de processos: " $(expr $(ps -ef | grep "jar target/floodlight.jar" | wc -l) - 1)
+
 				while [ $(ps -ef | grep "jar target/floodlight.jar" | wc -l) -eq 2 ];
 				do
+					echo "Número de processos: " $(expr $(ps -ef | grep "jar target/floodlight.jar" | wc -l) - 1)
 					#echo  $(ps -ef | grep "target/floodlight.jar" | wc -l)
 					echo "Experimento do controlador $controller com $quantity nós executando"
 					sleep 2
