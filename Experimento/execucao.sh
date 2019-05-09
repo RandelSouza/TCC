@@ -6,7 +6,7 @@ source ./mininet_wifi.sh
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
 
 controllerSDN=(Ryu Floodlight POX)
-nodesQuantity=(2 5 10 2 5 10 2 5 10 2 5 10)
+nodesQuantity=(2 5 10)
 
 for controller in "${controllerSDN[@]}"
 do
@@ -25,9 +25,7 @@ do
 
 		"Floodlight")
 			for quantity in "${nodesQuantity[@]}"
-			do
-				#sudo /etc/init.d/network-manager restart >> /dev/null
-				#sleep 15
+			do				
 				echo "Entrando no controlador: $controller, Número de nós: $quantity";
 				echo
 				cd /home/floodlight;
