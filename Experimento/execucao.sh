@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# terminar todos os experimentos
 source ./mininet_wifi.sh
 # Primeiro fator é o controlador sdn, os níveis são NOX, Opendaylight, Ryu, Floodlight, POX, Maestro, Trema e Beacon.
 # O Segundo fator é o número de nós IoT
