@@ -4,7 +4,7 @@ source ./mininet_wifi.sh
 # Primeiro fator é o controlador sdn, os níveis são NOX, Opendaylight, Ryu, Floodlight, POX, Maestro, Trema e Beacon.
 # O Segundo fator é o número de nós IoT
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
-
+# serão necessários os três últimos conteoladores
 controllerSDN=( Ryu ) #  Floodlight POX
 nodesQuantity=(2 5 10)
 
