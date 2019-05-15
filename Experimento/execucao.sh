@@ -16,9 +16,9 @@ nodesQuantity=(2 5 10)
 for controller in "${controllerSDN[@]}"
 do
 	case $controller in
-		"NOX")
+		#"NOX")
 			# Controlador NOX está obsoleto
-    	;;
+    	#;;
 
 		"Opendaylight")
 			echo "sim " $controller;
