@@ -17,7 +17,7 @@ for controller in "${controllerSDN[@]}"
 do
 	case $controller in
 		"NOX")
-			# Controlador NOX está obsoleto			
+			# Controlador NOX está obsoleto
     	;;
 
 		"Opendaylight")
@@ -106,7 +106,7 @@ do
     	;;
 
 		"Trema")
-			echo "sim " $controller;
+			# O controlador trema não possibiliza a integração com o mininet_wifi
     	;;
 
 		"Beacon")
