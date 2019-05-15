@@ -105,9 +105,9 @@ do
 			echo "sim " $controller;
     	;;
 
-		"Trema")
+		#"Trema")
 			# O controlador trema não possibiliza a integração com o mininet_wifi
-    	;;
+    	#;;
 
 		"Beacon")
 			echo "sim " $controller;
