@@ -3,9 +3,11 @@
 source ./mininet_wifi.sh
 # Primeiro fator é o controlador sdn, os níveis são NOX, Opendaylight, Ryu, Floodlight, POX, Maestro, Trema e Beacon.
 # O Segundo fator é o número de nós IoT
-#controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
-
-controllerSDN=( Ryu ) #  Floodlight POX
+#controllerSDN=(Opendaylight Ryu Floodlight POX Maestro Beacon)
+# NOX e Trema não serão utilizados, pois não é possivel a integração com o mininet_wifi.
+# Na literatura o controlador NOX já está obsoleto e é incentivado que se use o POX ao invés dele.
+# Já o controlador Trema de acordo com alguns altores somente é usado para modo de pesquisa e não possui integração com o mininet_wifi.
+controllerSDN=(Ryu POX Floodlight )
 nodesQuantity=(2 5 10)
 
 for controller in "${controllerSDN[@]}"
@@ -34,13 +36,12 @@ do
 				echo "Estartando o mininet wifi e criando uma topologia simples...."
 				topology 127.0.0.1 6636 Ryu $quantity &
 
-				while [ $(ps -ef | grep "PYTHONPATH=. ./bin/ryu run --observe-links ryu/app/gui_topology/gui_topology.py --ofp-tcp-listen-port=6636" | wc -l) -eq 3 ];
+				while [ $(ps -ef | grep "ryu" | wc -l) -eq 3 ];
 				do
-					echo "Número de processos: " $(expr $(ps -ef | grep "PYTHONPATH=. ./bin/ryu run --observe-links ryu/app/gui_topology/gui_topology.py --ofp-tcp-listen-port=6636" | wc -l) - 1)
+					echo "Número de processos: " $(expr $(ps -ef | grep "/ryu" | wc -l) - 1)
 					echo "Experimento do controlador $controller com $quantity nós executando"
 					sleep 2
 				done
-				clear
 				echo "Experimento do controlador $controller com $quantity nós finalizado!"
 			done
 
@@ -61,9 +62,9 @@ do
 				echo "Estartando o mininet wifi e criando uma topologia simples...."
 				topology 127.0.0.1 6653 Floodlight $quantity &
 
-				while [ $(ps -ef | grep "jar target/floodlight.jar" | wc -l) -eq 2 ];
+				while [ $(ps -ef | grep "floodlight" | wc -l) -eq 2 ];
 				do
-					echo "Número de processos: " $(expr $(ps -ef | grep "jar target/floodlight.jar" | wc -l) - 1)
+					echo "Número de processos: " $(expr $(ps -ef | grep "floodlight" | wc -l) - 1)
 					echo "Experimento do controlador $controller com $quantity nós executando"
 					sleep 2
 				done
