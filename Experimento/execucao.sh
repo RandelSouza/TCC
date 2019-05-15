@@ -1,13 +1,19 @@
 #!/bin/bash
-
+# terminar todos os experimentos
 source ./mininet_wifi.sh
 # Primeiro fator é o controlador sdn, os níveis são NOX, Opendaylight, Ryu, Floodlight, POX, Maestro, Trema e Beacon.
 # O Segundo fator é o número de nós IoT
+<<<<<<< HEAD
 #controllerSDN=(Opendaylight Ryu Floodlight POX Maestro Beacon)
 # NOX e Trema não serão utilizados, pois não é possivel a integração com o mininet_wifi.
 # Na literatura o controlador NOX já está obsoleto e é incentivado que se use o POX ao invés dele.
 # Já o controlador Trema de acordo com alguns altores somente é usado para modo de pesquisa e não possui integração com o mininet_wifi.
 controllerSDN=(Ryu POX Floodlight )
+=======
+#controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
+# serão necessários os três últimos conteoladores
+controllerSDN=( Ryu ) #  Floodlight POX
+>>>>>>> 07537b487f3e4ad1bb3699d7bbed841835e36eb4
 nodesQuantity=(2 5 10)
 
 for controller in "${controllerSDN[@]}"
