@@ -17,7 +17,7 @@ for controller in "${controllerSDN[@]}"
 do
 	case $controller in
 		"NOX")
-			echo "sim " $controller;
+			# Controlador NOX está obsoleto			
     	;;
 
 		"Opendaylight")
@@ -76,7 +76,7 @@ do
 
     	;;
 
-		"POX")			
+		"POX")
 			for quantity in "${nodesQuantity[@]}"
 			do
 				echo "Entrando no controlador: $controller, Número de nós: $quantity";
