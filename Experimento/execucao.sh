@@ -76,8 +76,7 @@ do
 
     	;;
 
-		"POX")
-			#echo "sim " $controller;
+		"POX")			
 			for quantity in "${nodesQuantity[@]}"
 			do
 				echo "Entrando no controlador: $controller, Número de nós: $quantity";
