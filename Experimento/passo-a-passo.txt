@@ -1,0 +1,2 @@
+1 - Instalar os controladores que integram-se com o mininet-wifi
+2 criar script para automatizar os testes
