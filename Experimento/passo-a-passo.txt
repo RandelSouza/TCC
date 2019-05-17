@@ -1,2 +1,4 @@
 1 - Instalar os controladores que integram-se com o mininet-wifi
 2 criar script para automatizar os testes
+3 Obter os dados do experimento
+4 criar os gráficos
