@@ -4,3 +4,4 @@
 4 criar os gráficos
 
 Terminar ft
+termina sc 3
