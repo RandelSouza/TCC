@@ -2,4 +2,10 @@
 2 criar script para automatizar os testes
 3 Obter os dados do experimento
 4 criar os gráficos
+<<<<<<< HEAD
 seções sobre protocolos IoT
+=======
+
+Terminar ft
+termina sc 3
+>>>>>>> f98517bf0112b1d8dea93a4fcef808dcce53dbfe
