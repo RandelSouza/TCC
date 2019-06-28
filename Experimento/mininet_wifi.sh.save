@@ -1,0 +1,13 @@
+#!/bin/bash
+
+function topology(){
+	# $1 - ip (ip do controlador)
+	# $2 - port (porta do controlador)
+	# $3 - nameController (nome do controlador)
+	# $4 - nodesQuantity  (quantidade de nós utilizaados)
+	cd ../../mininet-wifi/examples
+
+ cd ../../mininet-wifi/examples/	sudo python cenariosIoT.py 2>>  errorMn.txt
+	sudo python cenariosIoT.py 2>>  errorMn.txt
+	sudo python cenariosIoT.py $1 $2 $3 $4 2>>  errorIoT4$3$4.txt > /dev/null
+}
