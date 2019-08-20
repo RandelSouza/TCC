@@ -2,26 +2,15 @@
 
 source ./mininet_wifi.sh
 
-<<<<<<< HEAD
 # Primeiro fator é o controlador SDN, os níveis são NOX, Opendaylight, Ryu, Floodlight, POX, Maestro, Trema e Beacon.
-=======
 # Primeiro fator é o controlador sdn, os níveis são NOX, Opendaylight, Ryu, Floodlight, POX, Maestro, Trema e Beacon.
->>>>>>> e3bb23cdd615f2f44dd87971bc0772a282324527
 # O Segundo fator é o número de nós IoT
-
 # NOX e Trema não serão utilizados, pois não é possivel a integração com o mininet_wifi.
-
-<<<<<<< HEAD
 # Na literatura o controlador NOX já está obsoleto e é incentivado que use-se o POX ao invés dele.
-=======
 # Na literatura o controlador NOX já está obsoleto e é incentivado que se use o POX ao invés dele.
->>>>>>> e3bb23cdd615f2f44dd87971bc0772a282324527
-
 # Já o controlador Trema de acordo com alguns autores somente é usado para modo de pesquisa e não possui integração com o mininet_wifi.
-
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
 
-<<<<<<< HEAD
 controllerSDN=( Ryu Floodlight POX )
 # A capacidade do canal é de 1 Mbps por padrão
 
@@ -33,7 +22,7 @@ nodesQuantity=( 2 5 10 );
 stopValueNodesQuantity=10;
 repeat=500
 mkdir ~/TCC/Experimento/resultados_experimento > /dev/null 2> /dev/null;
-=======
+
 controllerSDN=( Floodlight POX Ryu )
 # A  capacidade do canal é de 1 Mbps por padrão
 
@@ -47,13 +36,11 @@ stopValuePacketLoss=10
 stopValuelinkDelay="100ms"
 
 mkdir ~/resultados_experimento > /dev/null 2> /dev/null
->>>>>>> e3bb23cdd615f2f44dd87971bc0772a282324527
 
 for controller in "${controllerSDN[@]}"
 do
 	case $controller in
 		"Ryu")
-<<<<<<< HEAD
 
 			cd /home/randel/ryu;
 			echo "Inicializando o controlador: " $controller;
@@ -89,7 +76,7 @@ do
 
 				# Finalizando a coleta de dados de consumo de processador.
 				sudo ~/TCC/Experimento/./kill_processor_consumption.sh;
-=======
+				
 			cd /home/randel/ryu;
 			echo "Inicializando o controlador: " $controller;
 			touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
@@ -124,14 +111,12 @@ do
 						done
 					done
 				done
->>>>>>> e3bb23cdd615f2f44dd87971bc0772a282324527
 			done
 
 
     	;;
 
 		"Floodlight")
-<<<<<<< HEAD
 
 			cd /home/randel/floodlight;
 			echo "Inicializando o controlador: " $controller;
@@ -167,7 +152,7 @@ do
 
 				# Finalizando a coleta de dados de consumo de processador.
 				sudo ~/TCC/Experimento/./kill_processor_consumption.sh;
-=======
+				
 			cd /home/randel/floodlight;
 			echo "Inicializando o controlador: " $controller;
 			touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
@@ -202,13 +187,11 @@ do
 						done
 					done
 				done
->>>>>>> e3bb23cdd615f2f44dd87971bc0772a282324527
 			done
 
     	;;
 
 		"POX")
-<<<<<<< HEAD
 
 			cd /home/randel/pox;
 			echo "Inicializando o controlador: " $controller;
@@ -243,7 +226,7 @@ do
 
 				# Finalizando a coleta de dados de consumo de processador.
 				sudo ~/TCC/Experimento/./kill_processor_consumption.sh;
-=======
+				
 			cd /home/randel/pox;
 			echo "Inicializando o controlador: " $controller;
 			touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
@@ -277,7 +260,6 @@ do
 						done
 					done
 				done
->>>>>>> e3bb23cdd615f2f44dd87971bc0772a282324527
 			done
     	;;
     esac
