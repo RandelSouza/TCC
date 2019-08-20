@@ -1,0 +1,17 @@
+Inicializando o controlador:  POX
+Entrando no controlador: POX, Número de nós: 2
+
+Estartando o mininet wifi e criando uma topologia simples....
+Experimento do controlador POX com 2 nós executando.
+Experimento do controlador POX com 2 nós finalizado!
+Entrando no controlador: POX, Número de nós: 5
+
+Estartando o mininet wifi e criando uma topologia simples....
+Experimento do controlador POX com 5 nós executando.
+Experimento do controlador POX com 5 nós finalizado!
+Entrando no controlador: POX, Número de nós: 10
+
+Estartando o mininet wifi e criando uma topologia simples....
+Experimento do controlador POX com 10 nós executando.
+Experimento do controlador POX com 10 nós finalizado!
+Todos os experimentos foram finalizados!!!
