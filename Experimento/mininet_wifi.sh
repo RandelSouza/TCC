@@ -1,12 +1,14 @@
 #!/bin/bash
 
 function topology(){
-	# $1 - ip
-	# $2 - port
-	# $3 - nameController
-	# $4 - nodesQuantity
-	cd /home/mininet-wifi/examples
-	sudo python iot.py 2>>  errorMn.txt
-	sudo python iot.py 2>>  errorMn.txt
-	sudo python iot4.py $1 $2 $3 $4 2>>  errorIoT4$3$4.txt > /dev/null
+	# $1 - ip (ip do controlador)
+	# $2 - port (porta do controlador)
+	# $3 - nameController (nome do controlador)
+	# $4 - nodesQuantity  (quantidade de nós utilizaados)
+	# $5 - flag  (run para continuar a execução ou stop para parar)
+	# $6 path
+
+	/usr/bin/time -f "Tempo decorrido: %E\nPercentual da CPU: %P\nTempo real decorrido relacionado ao processo: %e" \
+	sudo python /home/randel/mininet-wifi/examples/cenariosIoT.py $1 $2 $3 $4 $5 2>>  errorCenariosIoT$3_$4.txt > /dev/null 2>> ~/TCC/Experimento/resultados_experimento/$6/time_execucao_$3_$4.txt
 }
+

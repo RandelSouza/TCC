@@ -1,116 +1,150 @@
 #!/bin/bash
 
 source ./mininet_wifi.sh
-# Primeiro fator é o controlador sdn, os níveis são NOX, Opendaylight, Ryu, Floodlight, POX, Maestro, Trema e Beacon.
+
+# Primeiro fator é o controlador SDN, os níveis são NOX, Opendaylight, Ryu, Floodlight, POX, Maestro, Trema e Beacon.
 # O Segundo fator é o número de nós IoT
-#controllerSDN=(Opendaylight Ryu Floodlight POX Maestro Beacon)
+
 # NOX e Trema não serão utilizados, pois não é possivel a integração com o mininet_wifi.
-# Na literatura o controlador NOX já está obsoleto e é incentivado que se use o POX ao invés dele.
-# Já o controlador Trema de acordo com alguns altores somente é usado para modo de pesquisa e não possui integração com o mininet_wifi.
-#controllerSDN=(Ryu POX Floodlight )
+
+# Na literatura o controlador NOX já está obsoleto e é incentivado que use-se o POX ao invés dele.
+
+# Já o controlador Trema de acordo com alguns autores somente é usado para modo de pesquisa e não possui integração com o mininet_wifi.
+
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
-# serão necessários os três últimos conteoladores
-controllerSDN=( Ryu Floodlight POX )  
-nodesQuantity=(2 5 10)
+
+controllerSDN=( Ryu Floodlight POX )
+# A capacidade do canal é de 1 Mbps por padrão
+
+#controllerSDN=( Ryu );
+#controllerSDN=( Floodlight );
+#controllerSDN=( POX );
+
+nodesQuantity=( 2 5 10 );
+stopValueNodesQuantity=10;
+repeat=500
+mkdir ~/TCC/Experimento/resultados_experimento > /dev/null 2> /dev/null;
 
 for controller in "${controllerSDN[@]}"
 do
 	case $controller in
-		#"NOX")
-			# Controlador NOX está obsoleto
-    	#;;
-
-		"Opendaylight")
-			echo "sim " $controller;
-    	;;
-
 		"Ryu")
+
+			cd /home/randel/ryu;
+			echo "Inicializando o controlador: " $controller;
+			touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null;
+			sudo PYTHONPATH=. ./bin/ryu run --observe-links ryu/app/gui_topology/gui_topology.py --ofp-tcp-listen-port=6636 2>> log_experimento_execucao$controller.txt > /dev/null &
+
+			sleep 10;
+
 			for quantity in "${nodesQuantity[@]}"
 			do
-				echo "Entrando no controlador: $controller, Número de nós: $quantity";
-				echo
-				cd /home/ryu;
-				echo "Inicializando o controlador: " $controller;
-				touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
-				sudo PYTHONPATH=. ./bin/ryu run --observe-links ryu/app/gui_topology/gui_topology.py --ofp-tcp-listen-port=6636 2>> log_experimento_execucao$controller.txt > /dev/null &
+				mkdir -p ~/TCC/Experimento/resultados_experimento/Ryu_Nos_$quantity > /dev/null 2> /dev/null;
 
-				sleep 10
+				# Começa a coletar os dados de consumo de processador.
+				sudo ~/TCC/Experimento/./processor_consumption.sh $controller $quantity Ryu_Nos_$quantity &
 
-				echo "Estartando o mininet wifi e criando uma topologia simples...."
-				topology 127.0.0.1 6636 Ryu $quantity &
-
-				while [ $(ps -ef | grep "ryu" | wc -l) -eq 3 ];
+				for i in `seq $repeat`
 				do
-					echo "Número de processos: " $(expr $(ps -ef | grep "/ryu" | wc -l) - 1)
-					echo "Experimento do controlador $controller com $quantity nós executando"
-					sleep 2
+					flag="run";
+					echo "Entrando no controlador: $controller, Número de nós: $quantity";
+					echo;
+					echo "Rodando o mininet wifi e criando o cenário.";
+					echo "Experimento do controlador $controller com $quantity nós. Número $i.";
+
+					if [ $quantity -eq $stopValueNodesQuantity ]
+					then
+						flag="stop";
+					fi
+
+					topology 127.0.0.1 6636 Ryu $quantity $flag Ryu_Nos_$quantity
+
+					echo "Experimento do controlador $controller com $quantity nós, finalizado!";
 				done
-				echo "Experimento do controlador $controller com $quantity nós finalizado!"
+
+				# Finalizando a coleta de dados de consumo de processador.
+				sudo ~/TCC/Experimento/./kill_processor_consumption.sh;
 			done
+
 
     	;;
 
 		"Floodlight")
+
+			cd /home/randel/floodlight;
+			echo "Inicializando o controlador: " $controller;
+			touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null;
+			java -jar target/floodlight.jar 2>> log_experimento_execucao$controller.txt > /dev/null &
+
+			sleep 10;
+
 			for quantity in "${nodesQuantity[@]}"
 			do
-				echo "Entrando no controlador: $controller, Número de nós: $quantity";
-				echo
-				cd /home/floodlight;
-				echo "Inicializando o controlador: " $controller;
-				touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
-				java -jar target/floodlight.jar 2>> log_experimento_execucao$controller.txt > /dev/null &
+				mkdir -p ~/TCC/Experimento/resultados_experimento/Floodlight_Nos_$quantity > /dev/null 2> /dev/null;
 
-				sleep 10
+				# Começa a coletar os dados de consumo de processador.
+				sudo ~/TCC/Experimento/./processor_consumption.sh $controller $quantity Floodlight_Nos_$quantity &
 
-				echo "Estartando o mininet wifi e criando uma topologia simples...."
-				topology 127.0.0.1 6653 Floodlight $quantity &
-
-				while [ $(ps -ef | grep "floodlight" | wc -l) -eq 2 ];
+				for i in `seq $repeat`
 				do
-					echo "Número de processos: " $(expr $(ps -ef | grep "floodlight" | wc -l) - 1)
-					echo "Experimento do controlador $controller com $quantity nós executando"
-					sleep 2
+					flag="run";
+					echo "Entrando no controlador: $controller, Número de nós: $quantity";
+					echo;
+					echo "Rodando o mininet wifi e criando o cenário.";
+					echo "Experimento do controlador $controller com $quantity nós. Número $i.";
+
+					if [ $quantity -eq $stopValueNodesQuantity ]
+					then
+						flag="stop";
+					fi
+
+					topology 127.0.0.1 6653 Floodlight $quantity $flag Floodlight_Nos_$quantity
+
+					echo "Experimento do controlador $controller com $quantity nós, finalizado!";
 				done
-				echo "Experimento do controlador $controller com $quantity nós finalizado!"
+
+				# Finalizando a coleta de dados de consumo de processador.
+				sudo ~/TCC/Experimento/./kill_processor_consumption.sh;
 			done
 
     	;;
 
 		"POX")
+
+			cd /home/randel/pox;
+			echo "Inicializando o controlador: " $controller;
+			touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null;
+			sudo ./pox.py pox.forwarding.hub openflow.of_01 --port=6635 2>> log_experimento_execucao$controller.txt > /dev/null &
+
+			sleep 10;
+
 			for quantity in "${nodesQuantity[@]}"
 			do
-				echo "Entrando no controlador: $controller, Número de nós: $quantity";
-				echo
-				cd /home/pox;
-				echo "Inicializando o controlador: " $controller;
-				touch log_experimento_execucao$controller.txt 2> /dev/null > /dev/null
-				sudo ./pox.py pox.forwarding.hub openflow.of_01 --port=6635 2>> log_experimento_execucao$controller.txt > /dev/null &
+				mkdir -p ~/TCC/Experimento/resultados_experimento/POX_Nos_$quantity;
 
-				sleep 10
+				# Começa a coletar os dados de consumo de processador.
+				sudo ~/TCC/Experimento/./processor_consumption.sh $controller $quantity POX_Nos_$quantity &
 
-				echo "Estartando o mininet wifi e criando uma topologia simples...."
-				topology 127.0.0.1 6635 POX $quantity &
-
-				while [ $(ps -ef | grep "pox.py pox.forwarding.hub openflow.of_01" | wc -l) -eq 3 ];
+				for i in `seq $repeat`
 				do
-					echo "Número de processos: " $(expr $(ps -ef | grep "pox.py pox.forwarding.hub openflow.of_01" | wc -l) - 1)
-					echo "Experimento do controlador $controller com $quantity nós executando"
-					sleep 2
+					flag="run";
+					echo "Entrando no controlador: $controller, Número de nós: $quantity";
+					echo;
+					echo "Rodando o mininet wifi e criando o cenário.";
+					echo "Experimento do controlador $controller com $quantity nós. Número $i.";
+
+					if [ $quantity -eq $stopValueNodesQuantity ]
+					then
+						flag="stop";
+					fi
+
+					topology 127.0.0.1 6635 POX $quantity $flag POX_Nos_$quantity
+					echo "Experimento do controlador $controller com $quantity nós, finalizado!";
 				done
-				echo "Experimento do controlador $controller com $quantity nós finalizado!"
+
+				# Finalizando a coleta de dados de consumo de processador.
+				sudo ~/TCC/Experimento/./kill_processor_consumption.sh;
 			done
-    	;;
-
-		"Maestro")
-			echo "sim " $controller;
-    	;;
-
-		#"Trema")
-			# O controlador trema não possibiliza a integração com o mininet_wifi
-    	#;;
-
-		"Beacon")
-			echo "sim " $controller;
     	;;
     esac
 done
