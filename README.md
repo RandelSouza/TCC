@@ -24,6 +24,8 @@ O programa \textit{fdisk} é usado para a criação e manipulação de tabelas d
 
 Outro comando que foi utilizado para visualizar a capacidade de armazenamento interno da VM foi o “df -h”, que exibe a quantidade de espaço em disco disponível e a opção -h permite que os valores sejam legíveis para humanos, isto é, mostra os valores em potência de 1024. No entanto este comando não mostrou todas as partições e nem a capacidade total do disco (Figura \ref{hd_vm_df}).
 
+![text](https://github.com/RandelSouza/TCC/blob/master/img/hd_vm.jpg)
+
 \begin{figure}[H]
 	\caption{\label{hd_vm_df}Espaço de armazenamento interno da VM utilizando o comando df}
 	\begin{center}
@@ -34,6 +36,8 @@ Outro comando que foi utilizado para visualizar a capacidade de armazenamento in
 
 A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} no experimento do controlador Ryu com 26 nós IoT.
 
+![text](https://github.com/RandelSouza/TCC/blob/master/img/ping2.jpg)
+
 \begin{figure}[H]
 	\caption{\label{ping6}Comando \textit{ping6}}
 	\begin{center}
@@ -41,6 +45,8 @@ A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} n
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
+
+![text](https://github.com/RandelSouza/TCC/blob/master/img/free.jpg)
 
 \begin{figure}[H]
 	\caption{\label{free}Comando \textit{free}}
@@ -51,6 +57,9 @@ A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} n
 \end{figure}
 
 A Figura \ref{time} mostra, como exemplo, o comando \textit{time} sendo executado para sumarizar o tempo decorrido de execução do comando \textit{ls} e também o percentual de CPU.
+
+
+![text](https://github.com/RandelSouza/TCC/blob/master/img/time.jpg)
 
 \begin{figure}[H]
 	\caption{\label{time}Comando \textit{time}}
@@ -80,6 +89,8 @@ de já ter uma máquina real com a versão \textit{Ubuntu} 16.04 LTS com o emula
 % parei a correção aqui.
 Mesmo após a atualização do sistema operacional, o erro ainda acontecia, com isso, foi pesquisado o erro e encontrada a \textit{issue : command failed for 6LowPAN example} nela os desenvolvedores deram instruções para reexecutar o arquivo “\textit{util/install.sh}” utilizando somente o argumento -6, caso não tivesse passado este argumento por padrão, mas, também não funcionou. Então foi verificado pelos comentários que estavam conseguindo resolver o problema ao atualizar a versão do \textit{kernel}. Tendo isso em vista, foi feito o processo de atualização do \textit{kernel}. Os comandos utilizados estão presentes na Figura \ref{update_kernel}. A versão do \textit{kernel} depois da atualização ficou a 4.15.0-59-\textit{generic}, e realizando novamente os testes verificou-se um funcionamento normal dos exemplos sem o erro em questão.
 
+![text](https://github.com/RandelSouza/TCC/blob/master/img/update_kernel.jpg)
+
 \begin{figure}[H]
 	\caption{\label{update_kernel}Atualizando o \textit{kernel} do sistema}
 	\begin{center}
@@ -94,6 +105,8 @@ Possuindo então o ambiente de trabalho pré-configurado e tendo o emulador Mini
 
 Dando continuidade aos passos de execução, chegou-se ao ponto de instalação dos controladores SDN, em ordem foram instalados o Ryu, POX e Floodlight. A instalação do controlador Ryu não apresentou problema, necessitando de apenas 3 comandos. O primeiro comando foi utilizado para clonar o repositório do Ryu presente no \textit{github} com o comndo “\textit{git clone git://github.com/osrg/ryu.git}”, após isso, com o comando “\textit{cd ryu}” entrou-se na pasta clonada e por fim executou-se o arquivo de instalação com o seguinte comando “\textit{python ./setup.py install}”. Os comando estão exposto na Figura \ref{ryu_insta}.
 
+![text](https://github.com/RandelSouza/TCC/blob/master/img/ryu_insta.jpg)
+
 \begin{figure}[H]
 	\caption{\label{ryu_insta}Comandos instalação do Ryu}
 	\begin{center}
@@ -104,6 +117,8 @@ Dando continuidade aos passos de execução, chegou-se ao ponto de instalação 
 
 O segundo controlador a ser instalado foi o POX. Diferentemente do primeiro controlador instalado não contêm arquivos de instalação, tendo somente que fazer um clone do repositório presente no \textit{github}. O comando empregado para clonar o POX foi “\textit{git clone https://github.com/noxrepo/pox.git}” (Figura \ref{pox_insta}).
 
+![text](https://github.com/RandelSouza/TCC/blob/master/img/pox_insta.jpg)
+
 \begin{figure}[H]
 	\caption{\label{pox_insta}Comando instalação do POX}
 	\begin{center}
@@ -113,6 +128,8 @@ O segundo controlador a ser instalado foi o POX. Diferentemente do primeiro cont
 \end{figure}
 
 Por fim, foi realizada a instalação do controlador Floodlight. De início, tentou-se instalar a versão \textit{master} do Floodlight com os comandos da Figura \ref{flood_insta}, porém ocorriam erros ao executar os comandos “\textit{git submodule init}”, “\textit{git submodule update}” e “\textit{ant}”. Ainda tentou-se pesquisar uma solução para resolver os erros de instalação, mas não houve sucesso nas pesquisas. Então partiu-se para a instalação da versão 1.2 do controlador Floodlight, para isso foi preciso somente modificar o primeiro comando apresentado na Figura \ref{flood_insta}, o comando ficou da seguinte forma “\textit{git clone -b v1.2 git://github.com/floodlight/floodlight.git}”. A versão 1.2 do controlador Floodlight foi instalada sem a ocorrência de erros. Em comparação aos dois controladores anteriormente instalados, o Floodlight apresentou um número maior de comandos para sua instalação.
+
+![text](https://github.com/RandelSouza/TCC/blob/master/img/flood_insta.jpg)
 
 \begin{figure}[H]
 	\caption{\label{flood_insta}Instalação Floodlight \textit{master}}
