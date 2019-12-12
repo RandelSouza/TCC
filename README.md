@@ -12,7 +12,7 @@ Na Seção \ref{comandos} são vistos alguns comandos úteis que foram utilizado
 
 O programa \textit{fdisk} é usado para a criação e manipulação de tabelas de partição. A execução do comando com o argumento -l  “\textit{sudo fdisk -l}” lista as tabelas de partição descrevendo varias informações dentre elas a capacidade interna de armazenamento. Em continuação, ainda na Figura \ref{hd_vm_fdisk} é possível visualizar o particionamento do disco /dev/xvda em 3 outras partições, sendo denominadas de /dev/xvda1 que apresenta 37,9 \textit{Gigabytes}, /dev/xvda2 e /dev/xvda5 apresentando cada uma 2,1 \textit{Gigabytes}.
 
-![text](https://github.com/RandelSouza/TCC/blob/master/img/hd_vm_fdisk.pdf)
+![text](https://github.com/RandelSouza/TCC/blob/master/img/hd_vm_fdisk.jpg)
 
 \begin{figure}[H]
 	\caption{\label{hd_vm_fdisk}Espaço de armazenamento interno da VM utilizando o comando fdisk}
