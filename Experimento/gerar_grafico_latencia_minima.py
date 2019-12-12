@@ -36,14 +36,14 @@ sys.setdefaultencoding('utf-8')
 
 path = "resultados_experimento"
 controllerSDN = [ "Ryu", "Floodlight", "POX" ]
-nodesQuantity = [ 2, 5, 10 ]
+nodesQuantity = [ 26, 52, 104 ]
 dados = []
 dados_processados = []
 color = ["green", "#ff8c00", "m"]
 size = 20
 
 x = [ 2, 12, 21 ]
-labels=[ "2","5", "10" ]
+labels=[ "26","52", "104" ]
 
 for controller in controllerSDN:
     for quantity in nodesQuantity:
@@ -54,23 +54,22 @@ for dado in dados:
     dados_processados.append( calc( dado ) )
 print dados_processados
 
-plt.errorbar(1, dados_processados[0][0], yerr=dados_processados[0][1], linestyle='', capsize=35,elinewidth="4", marker='o',fmt='o', label=controllerSDN[0], color=color[0], markersize=20)
-plt.errorbar(2, dados_processados[3][0], yerr=dados_processados[3][1], linestyle='',capsize=35,elinewidth="4",marker='^', fmt='^', label=controllerSDN[1], color=color[1], markersize=20)
-plt.errorbar(3, dados_processados[6][0], yerr=dados_processados[6][1], linestyle='',capsize=35,elinewidth="4",marker='s', fmt='s',label=controllerSDN[2], color=color[2], markersize=20)
+plt.errorbar(1, dados_processados[0][0], yerr=dados_processados[0][1], linestyle='', capsize=35,elinewidth="4", marker='o',fmt='o', label=controllerSDN[0], color=color[0], markersize=20, capthick=2)
+plt.errorbar(2, dados_processados[3][0], yerr=dados_processados[3][1], linestyle='',capsize=35,elinewidth="4",marker='^', fmt='^', label=controllerSDN[1], color=color[1], markersize=20, capthick=2)
+plt.errorbar(3, dados_processados[6][0], yerr=dados_processados[6][1], linestyle='',capsize=35,elinewidth="4",marker='s', fmt='s',label=controllerSDN[2], color=color[2], markersize=20, capthick=2)
 
-plt.errorbar(11, dados_processados[1][0], yerr=dados_processados[1][1], linestyle='',capsize=35,elinewidth="4",marker='o', fmt='o',color=color[0], markersize=20)
-plt.errorbar(12, dados_processados[4][0], yerr=dados_processados[4][1], linestyle='',capsize=35,elinewidth="4",marker='^', fmt='^',color=color[1], markersize=20)
-plt.errorbar(13, dados_processados[7][0], yerr=dados_processados[7][1], linestyle='',capsize=35,elinewidth="4",marker='s', fmt='s',color=color[2], markersize=20)
+plt.errorbar(11, dados_processados[1][0], yerr=dados_processados[1][1], linestyle='',capsize=35,elinewidth="4",marker='o', fmt='o',color=color[0], markersize=20, capthick=2)
+plt.errorbar(12, dados_processados[4][0], yerr=dados_processados[4][1], linestyle='',capsize=35,elinewidth="4",marker='^', fmt='^',color=color[1], markersize=20, capthick=2)
+plt.errorbar(13, dados_processados[7][0], yerr=dados_processados[7][1], linestyle='',capsize=35,elinewidth="4",marker='s', fmt='s',color=color[2], markersize=20, capthick=2)
 
-plt.errorbar(20, dados_processados[2][0], yerr=dados_processados[2][1], linestyle='',capsize=35,elinewidth="4",marker='o', fmt='o',color=color[0], markersize=20)
-plt.errorbar(21, dados_processados[5][0], yerr=dados_processados[5][1], linestyle='',capsize=35,elinewidth="4",marker='^', fmt='^',color=color[1], markersize=20)
-plt.errorbar(22, dados_processados[8][0], yerr=dados_processados[8][1], linestyle='',capsize=35,elinewidth="4",marker='s', fmt='s',color=color[2], markersize=20)
+plt.errorbar(20, dados_processados[2][0], yerr=dados_processados[2][1], linestyle='',capsize=35,elinewidth="4",marker='o', fmt='o',color=color[0], markersize=20, capthick=2)
+plt.errorbar(21, dados_processados[5][0], yerr=dados_processados[5][1], linestyle='',capsize=35,elinewidth="4",marker='^', fmt='^',color=color[1], markersize=20, capthick=2)
+plt.errorbar(22, dados_processados[8][0], yerr=dados_processados[8][1], linestyle='',capsize=35,elinewidth="4",marker='s', fmt='s',color=color[2], markersize=20, capthick=2)
 
 # linhas
 plt.plot([1, 11, 20], [dados_processados[0][0], dados_processados[1][0], dados_processados[2][0]], color=color[0], linewidth=1, linestyle='dashed')
 plt.plot([2, 12, 21], [dados_processados[3][0], dados_processados[4][0], dados_processados[5][0]], color=color[1], linewidth=1, linestyle='dashed')
 plt.plot([3, 13, 22], [dados_processados[6][0], dados_processados[7][0], dados_processados[8][0]], color=color[2], linewidth=1, linestyle='dashed')
-
 
 
 plt.xticks(x, labels)
@@ -80,5 +79,5 @@ plt.legend(loc='best', numpoints = 1)
 
 plt.title("Latência mínima\n")
 #plt.savefig("/home/randel/manhattan02.png")
+plt.grid(True)
 plt.show()
-

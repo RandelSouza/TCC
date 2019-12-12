@@ -8,9 +8,8 @@ import matplotlib.patches as mpatches
 import numpy as np
 plt.rcParams.update({'font.size': 35})
 
-
 '''
-# Configurações dos Gráficos que podem alteradas
+# Configurações dos Gráficos que podem ser alteradas
 SMALL_SIZE = 40
 MEDIUM_SIZE = 40
 BIGGER_SIZE = 40
@@ -23,6 +22,7 @@ plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
 plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
 plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 '''
+
 
 def calc(df):
     mean = df[0].mean()
@@ -46,16 +46,14 @@ labels=[ "26","52", "104" ]
 
 for controller in controllerSDN:
     for quantity in nodesQuantity:
-        arquivo = "{}/{}{}{}/processor_consumption_free_{}{}.txt".format(path, controller, "_Nos_", quantity, controller, quantity)
+        arquivo = "{}/{}{}{}/time_execucao_real_{}_{}.txt".format(path, controller, "_Nos_", quantity, controller, quantity)
 	dados.append( pd.read_csv(glob(arquivo)[0], header=None ) )
 
 for dado in dados:
     dados_processados.append( calc( dado ) )
 print dados_processados
 
-
-plt.ylim(100, 1000)
-plt.errorbar(1, dados_processados[0][0], yerr=dados_processados[0][1], linestyle='', capsize=35,elinewidth="4", marker='o',fmt='o', label=controllerSDN[0], color=color[0], markersize=20, capthick=2)
+plt.errorbar(1, dados_processados[0][0], yerr=dados_processados[0][1], linestyle='', capsize=35,elinewidth="4", marker='o',fmt='o', label=controllerSDN[0], color=color[0], markersize=20,  capthick=2)
 plt.errorbar(2, dados_processados[3][0], yerr=dados_processados[3][1], linestyle='',capsize=35,elinewidth="4",marker='^', fmt='^', label=controllerSDN[1], color=color[1], markersize=20, capthick=2)
 plt.errorbar(3, dados_processados[6][0], yerr=dados_processados[6][1], linestyle='',capsize=35,elinewidth="4",marker='s', fmt='s',label=controllerSDN[2], color=color[2], markersize=20, capthick=2)
 
@@ -72,11 +70,15 @@ plt.plot([1, 11, 20], [dados_processados[0][0], dados_processados[1][0], dados_p
 plt.plot([2, 12, 21], [dados_processados[3][0], dados_processados[4][0], dados_processados[5][0]], color=color[1], linewidth=1, linestyle='dashed')
 plt.plot([3, 13, 22], [dados_processados[6][0], dados_processados[7][0], dados_processados[8][0]], color=color[2], linewidth=1, linestyle='dashed')
 
+
 plt.xticks(x, labels)
 plt.xlabel('Número de nós IoT\n')
-plt.ylabel(' Megabyte (MB)\n')
+plt.ylabel('Tempo (s)\n')
 plt.legend(loc='best', numpoints=1)
 plt.grid(True)
-plt.title("Memória livre\n")
+plt.title("Tempo de execução\n")
 #plt.savefig("/home/randel/manhattan02.png")
+#mng = plt.get_current_fig_manager()
+#mng.full_screen_toggle()
 plt.show()
+
