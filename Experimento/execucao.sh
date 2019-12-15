@@ -13,8 +13,8 @@ source ./mininet_wifi.sh
 
 #controllerSDN=(NOX Opendaylight Ryu Floodlight POX Maestro Trema Beacon)
 
-controllerSDN=( Floodlight POX )
-#controllerSDN=( Ryu Floodlight POX )
+#controllerSDN=( Floodlight POX )
+controllerSDN=( Ryu Floodlight POX )
 # A capacidade do canal é de 1 Mbps por padrão
 
 #controllerSDN=( Ryu );
