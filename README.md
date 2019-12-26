@@ -1,7 +1,7 @@
 
 # Trabalho de Conclusão de Curso (TCC)
 
-<p style="text-align: justify;">	
+<p style="text-align: center;">	
 Trabalho de Conclusão de Curso apresentado ao Curso de Redes de Computadores da Universidade Federal do Ceará, como requisito parcial à obtenção do grau de Tecnólogo em Redes de Computadores. Área de concentração:Computação.
 </p>
 
