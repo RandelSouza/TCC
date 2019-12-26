@@ -7,7 +7,7 @@ Trabalho de Conclusão de Curso apresentado ao Curso de Redes de Computadores da
 
 # Tema
 
-<div align="justify" font-size="20px">
+<div align="justify" style="font-size:20px">
 Uma comparação entre controladores de Redes Definidas por Software em cenários de Internet das Coisas
 </div>
 
