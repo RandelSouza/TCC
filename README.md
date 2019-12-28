@@ -13,7 +13,7 @@ Uma comparação entre controladores de Redes Definidas por Software em cenário
 
 # Instalação
 
-Na Seção \ref{comandos} são vistos alguns comandos úteis que foram utilizados para visualizar as informações da VM. A Seção \ref{mininetwifi-insta} informa o processo de instalação do emulador Mininet-WiFi. Por fim, a Seção \ref{ctr-insta} explica o processo de instalação dos controladores SDN.
+Nesta Seção são vistos alguns comandos úteis que foram utilizados para visualizar as informações da VM. A Seção instalação informa o processo de instalação do emulador Mininet-WiFi. Por fim, a Seção intalação dos controladores explica o processo de instalação dos controladores SDN.
 
 # Comandos
 
