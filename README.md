@@ -35,6 +35,7 @@ Outro comando que foi utilizado para visualizar a capacidade de armazenamento in
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/hd_vm.jpg)
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{hd_vm_df}Espaço de armazenamento interno da VM utilizando o comando df}
 	\begin{center}
@@ -42,6 +43,7 @@ Outro comando que foi utilizado para visualizar a capacidade de armazenamento in
 	\end{center}
 	\legend{ Fonte: Próprio autor (2019).}
 \end{figure}
+</div-->
 
 A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} no experimento do controlador Ryu com 26 nós IoT.
 
