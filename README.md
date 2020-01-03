@@ -76,6 +76,7 @@ A Figura \ref{time} mostra, como exemplo, o comando \textit{time} sendo executad
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/time.jpg)
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{time}Comando \textit{time}}
 	\begin{center}
@@ -83,7 +84,7 @@ A Figura \ref{time} mostra, como exemplo, o comando \textit{time} sendo executad
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
-
+</div-->
 
 
 \section{Instalação do Mininet-WiFi} \label{mininetwifi-insta}
