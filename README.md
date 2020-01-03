@@ -127,6 +127,7 @@ Dando continuidade aos passos de execução, chegou-se ao ponto de instalação 
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/ryu_insta.jpg)
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{ryu_insta}Comandos instalação do Ryu}
 	\begin{center}
@@ -134,11 +135,13 @@ Dando continuidade aos passos de execução, chegou-se ao ponto de instalação 
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
+</div-->
 
 O segundo controlador a ser instalado foi o POX. Diferentemente do primeiro controlador instalado não contêm arquivos de instalação, tendo somente que fazer um clone do repositório presente no \textit{github}. O comando empregado para clonar o POX foi “\textit{git clone https://github.com/noxrepo/pox.git}” (Figura \ref{pox_insta}).
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/pox_insta.jpg)
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{pox_insta}Comando instalação do POX}
 	\begin{center}
@@ -146,11 +149,13 @@ O segundo controlador a ser instalado foi o POX. Diferentemente do primeiro cont
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
+</div-->
 
 Por fim, foi realizada a instalação do controlador Floodlight. De início, tentou-se instalar a versão \textit{master} do Floodlight com os comandos da Figura \ref{flood_insta}, porém ocorriam erros ao executar os comandos “\textit{git submodule init}”, “\textit{git submodule update}” e “\textit{ant}”. Ainda tentou-se pesquisar uma solução para resolver os erros de instalação, mas não houve sucesso nas pesquisas. Então partiu-se para a instalação da versão 1.2 do controlador Floodlight, para isso foi preciso somente modificar o primeiro comando apresentado na Figura \ref{flood_insta}, o comando ficou da seguinte forma “\textit{git clone -b v1.2 git://github.com/floodlight/floodlight.git}”. A versão 1.2 do controlador Floodlight foi instalada sem a ocorrência de erros. Em comparação aos dois controladores anteriormente instalados, o Floodlight apresentou um número maior de comandos para sua instalação.
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/flood_insta.jpg)
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{flood_insta}Instalação Floodlight \textit{master}}
 	\begin{center}
@@ -158,6 +163,7 @@ Por fim, foi realizada a instalação do controlador Floodlight. De início, ten
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
+<div--->
 
 Finalizado o processo de instalação dos controladores Ryu, POX e Floodlight, o passo posterior foi a criação dos \textit{scripts} de automatização dos experimentos, a Seção \ref{scripts-experimentos} discute, o modelo empregado para a automatização dos experimentos, discorrendo também de informações importantes sobre os fatores e níveis empregados para o presente trabalho.
 % fazer link mais detalhado com a ãSeo seguinte
