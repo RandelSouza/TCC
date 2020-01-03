@@ -61,6 +61,7 @@ A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} n
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/free.jpg)
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{free}Comando \textit{free}}
 	\begin{center}
@@ -68,6 +69,7 @@ A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} n
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
+</div-->
 
 A Figura \ref{time} mostra, como exemplo, o comando \textit{time} sendo executado para sumarizar o tempo decorrido de execução do comando \textit{ls} e também o percentual de CPU.
 
