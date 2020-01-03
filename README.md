@@ -49,6 +49,7 @@ A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} n
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/ping2.jpg)
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{ping6}Comando \textit{ping6}}
 	\begin{center}
@@ -56,6 +57,7 @@ A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} n
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
+</div-->
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/free.jpg)
 
