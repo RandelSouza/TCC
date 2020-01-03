@@ -1,23 +1,5 @@
 # Trabalho de Conclusão de Curso (TCC)
 
-<!--div>
-<details><summary>CLICK ME</summary>
-<p>
-
-#### yes, even hidden code blocks!
-
-```python
-
-for i in range(10):
-    if i % 2 == 0:
-        print "Par"
-    else:
-    	print "Impar"
-```
-</p>
-</details>
-</div--->
-
 <div align="justify">
 Trabalho de Conclusão de Curso apresentado ao Curso de Redes de Computadores da Universidade Federal do Ceará, como requisito parcial à obtenção do grau de Tecnólogo em Redes de Computadores. Área de concentração:Computação.
 </div>
@@ -34,6 +16,11 @@ Nesta Seção são vistos alguns comandos úteis que foram utilizados para visua
 
 # Comandos
 
+<details><summary></summary>
+<p>
+
+## yes, even hidden code blocks!
+
 O programa \textit{fdisk} é usado para a criação e manipulação de tabelas de partição. A execução do comando com o argumento -l  “\textit{sudo fdisk -l}” lista as tabelas de partição descrevendo varias informações dentre elas a capacidade interna de armazenamento. Em continuação, ainda na Figura \ref{hd_vm_fdisk} é possível visualizar o particionamento do disco /dev/xvda em 3 outras partições, sendo denominadas de /dev/xvda1 que apresenta 37,9 \textit{Gigabytes}, /dev/xvda2 e /dev/xvda5 apresentando cada uma 2,1 \textit{Gigabytes}.
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/hd_vm_fdisk.jpg)
@@ -47,6 +34,10 @@ O programa \textit{fdisk} é usado para a criação e manipulação de tabelas d
 	\legend{ Fonte: Próprio autor (2019).}
 \end{figure}
 </div-->
+
+</p>
+</details>
+
 
 Outro comando que foi utilizado para visualizar a capacidade de armazenamento interno da VM foi o “df -h”, que exibe a quantidade de espaço em disco disponível e a opção -h permite que os valores sejam legíveis para humanos, isto é, mostra os valores em potência de 1024. No entanto este comando não mostrou todas as partições e nem a capacidade total do disco (Figura \ref{hd_vm_df}).
 
