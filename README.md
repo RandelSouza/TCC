@@ -1,11 +1,17 @@
 # Trabalho de Conclusão de Curso (TCC)
+
 <details><summary>CLICK ME</summary>
 <p>
 
 #### yes, even hidden code blocks!
 
 ```python
-print("hello world!")
+
+for i in range(10):
+    if i % 2 == 0:
+        print "Par"
+    else:
+    	print "Impar"
 ```
 
 </p>
