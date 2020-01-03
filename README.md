@@ -1,5 +1,6 @@
 # Trabalho de Conclusão de Curso (TCC)
 
+<!--div>
 <details><summary>CLICK ME</summary>
 <p>
 
@@ -13,9 +14,9 @@ for i in range(10):
     else:
     	print "Impar"
 ```
-
 </p>
 </details>
+</div--->
 
 <div align="justify">
 Trabalho de Conclusão de Curso apresentado ao Curso de Redes de Computadores da Universidade Federal do Ceará, como requisito parcial à obtenção do grau de Tecnólogo em Redes de Computadores. Área de concentração:Computação.
