@@ -94,6 +94,7 @@ Tendo a VM pré-configurada e em funcionamento, foi iniciado o passo de instala�
 Depois do término da execução do arquivo de instalação do Mininet-WiFi, foi realizado um teste para verificar se o emulador estava realmente em pleno funcionamento. Entretanto, ao executar os exemplos de teste, houve um erro que persistia em todas as tentativas, o seguinte erro acontecia “\textit{command failed: Invalid argument }(-22)”. Para tentar reparar o erro, foi decidido fazer atualização na versão do sistema operacional da versão vigente até o momento que era a \textit{Ubuntu} 14.04 LTS para a versão \textit{Ubuntu} 16.04 LTS a atualização foi por motivo empírico
 de já ter uma máquina real com a versão \textit{Ubuntu} 16.04 LTS com o emulador Mininet-WiFi em perfeito funcionamento. Então o processo de atualização foi realizado com os comandos presentes na Figura \ref{update_so}, e ao final da execução dos comandos da Figura \ref{update_so} a VM foi reinicializada com o comando “\textit{sudo reboot}”.
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{update_so}Atualizando o sistema operacional}
 	\begin{center}
@@ -101,12 +102,14 @@ de já ter uma máquina real com a versão \textit{Ubuntu} 16.04 LTS com o emula
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
+</div-->
 
 % parei a correção aqui.
 Mesmo após a atualização do sistema operacional, o erro ainda acontecia, com isso, foi pesquisado o erro e encontrada a \textit{issue : command failed for 6LowPAN example} nela os desenvolvedores deram instruções para reexecutar o arquivo “\textit{util/install.sh}” utilizando somente o argumento -6, caso não tivesse passado este argumento por padrão, mas, também não funcionou. Então foi verificado pelos comentários que estavam conseguindo resolver o problema ao atualizar a versão do \textit{kernel}. Tendo isso em vista, foi feito o processo de atualização do \textit{kernel}. Os comandos utilizados estão presentes na Figura \ref{update_kernel}. A versão do \textit{kernel} depois da atualização ficou a 4.15.0-59-\textit{generic}, e realizando novamente os testes verificou-se um funcionamento normal dos exemplos sem o erro em questão.
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/update_kernel.jpg)
 
+<!-- div>
 \begin{figure}[H]
 	\caption{\label{update_kernel}Atualizando o \textit{kernel} do sistema}
 	\begin{center}
@@ -114,6 +117,7 @@ Mesmo após a atualização do sistema operacional, o erro ainda acontecia, com 
 	\end{center}
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
+</div-->
 
 Possuindo então o ambiente de trabalho pré-configurado e tendo o emulador Mininet-WiFi instalado e sem erros, o passo seguinte foi a instalação dos controladores SDN, a descrição do processo de instalação dos controladores POX, Floodlight e Ryu é apresentada na Seção \ref{ctr-insta} e o teste de conectividade dos controladores citados pode ser consultado no APÊNDICE \ref{instalacaoapendicea}.
 
