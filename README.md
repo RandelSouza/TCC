@@ -59,6 +59,9 @@ Outro comando que foi utilizado para visualizar a capacidade de armazenamento in
 </details>
 
 
+<details><summary>outros comandos</summary>
+<p>
+
 A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} no experimento do controlador Ryu com 26 nós IoT.
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/ping2.jpg)
@@ -100,6 +103,8 @@ A Figura \ref{time} mostra, como exemplo, o comando \textit{time} sendo executad
 \end{figure}
 </div-->
 
+</p>
+</details>
 
 \section{Instalação do Mininet-WiFi} \label{mininetwifi-insta}
 
