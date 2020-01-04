@@ -37,6 +37,9 @@ O programa \textit{fdisk} é usado para a criação e manipulação de tabelas d
 </p>
 </details>
 
+<details><summary>df -h</summary>
+<p>
+
 
 Outro comando que foi utilizado para visualizar a capacidade de armazenamento interno da VM foi o “df -h”, que exibe a quantidade de espaço em disco disponível e a opção -h permite que os valores sejam legíveis para humanos, isto é, mostra os valores em potência de 1024. No entanto este comando não mostrou todas as partições e nem a capacidade total do disco (Figura \ref{hd_vm_df}).
 
@@ -51,6 +54,10 @@ Outro comando que foi utilizado para visualizar a capacidade de armazenamento in
 	\legend{ Fonte: Próprio autor (2019).}
 \end{figure}
 </div-->
+
+</p>
+</details>
+
 
 A Figura \ref{ping6} mostra o final da execução de um comando \textit{ping6} no experimento do controlador Ryu com 26 nós IoT.
 
