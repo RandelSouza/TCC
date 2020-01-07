@@ -144,6 +144,9 @@ Mesmo após a atualização do sistema operacional, o erro ainda acontecia, com 
 </p>
 </details>
 
+<details><summary>Instalação dos controladores sdn</summary>
+<p>
+
 Possuindo então o ambiente de trabalho pré-configurado e tendo o emulador Mininet-WiFi instalado e sem erros, o passo seguinte foi a instalação dos controladores SDN, a descrição do processo de instalação dos controladores POX, Floodlight e Ryu é apresentada na Seção \ref{ctr-insta} e o teste de conectividade dos controladores citados pode ser consultado no APÊNDICE \ref{instalacaoapendicea}.
 
 \section{Instalação dos controladores SDN} \label{ctr-insta}
@@ -192,3 +195,5 @@ Por fim, foi realizada a instalação do controlador Floodlight. De início, ten
 
 Finalizado o processo de instalação dos controladores Ryu, POX e Floodlight, o passo posterior foi a criação dos \textit{scripts} de automatização dos experimentos, a Seção \ref{scripts-experimentos} discute, o modelo empregado para a automatização dos experimentos, discorrendo também de informações importantes sobre os fatores e níveis empregados para o presente trabalho.
 % fazer link mais detalhado com a ãSeo seguinte
+</p>
+</details>
