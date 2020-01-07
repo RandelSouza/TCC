@@ -106,7 +106,7 @@ A Figura \ref{time} mostra, como exemplo, o comando \textit{time} sendo executad
 </p>
 </details>
 
-<details><summary>Instalação</summary>
+<details><summary>Instalação Mininet-Wifi</summary>
 <p>
 
 \section{Instalação do Mininet-WiFi} \label{mininetwifi-insta}
