@@ -106,6 +106,9 @@ A Figura \ref{time} mostra, como exemplo, o comando \textit{time} sendo executad
 </p>
 </details>
 
+<details><summary>Instalação</summary>
+<p>
+
 \section{Instalação do Mininet-WiFi} \label{mininetwifi-insta}
 
 Tendo a VM pré-configurada e em funcionamento, foi iniciado o passo de instalação do emulador Mininet-WiFi. O código fonte do Mininet-WiFi pode ser baixado pelo \textit{github} conforme a seguinte url “\textit{https://github.com/intrig-unicamp/mininet-wifi}”. Para clonar o Mininet-Wifi através da linha de comando é necessário ter o git instalado na VM, para isso utilizou-se o comando “\textit{sudo apt-get install git}”. Com o \textit{git} instalado foi realizado o comando para clonar o Mininet-WiFi para a VM. O comando para tal foi “\textit{git clone https://github.com/intrig-unicamp/mininet-wifi}”. Após isso, o passo subsequente foi entrar no diretório clonado com o comando “\textit{cd mininet-wifi}” e dentro do respectivo diretório existe um arquivo de instalação que fica em “\textit{util/install.sh}”. Este arquivo foi executado com o comando “\textit{sudo util/install.sh -Wlnfv6}”. Os argumentos passados configuram o \textit{script} de instalação para instalar as dependências \textit{wireless} com o -W, para instalar as dependencias do Mininet-WiFi com o -n, para instalar o \textit{OpenFlow} com o -f, para instalar o \textit{OpenvSwitch} com o -v, para instalar \textit{wmediumd} com -l e para instalar as ferramentas \textit{wpan} com o -6.
@@ -137,6 +140,9 @@ Mesmo após a atualização do sistema operacional, o erro ainda acontecia, com 
 	\legend{Fonte: Próprio autor (2019).}
 \end{figure}
 </div-->
+
+</p>
+</details>
 
 Possuindo então o ambiente de trabalho pré-configurado e tendo o emulador Mininet-WiFi instalado e sem erros, o passo seguinte foi a instalação dos controladores SDN, a descrição do processo de instalação dos controladores POX, Floodlight e Ryu é apresentada na Seção \ref{ctr-insta} e o teste de conectividade dos controladores citados pode ser consultado no APÊNDICE \ref{instalacaoapendicea}.
 
