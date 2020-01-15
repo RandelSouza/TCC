@@ -14,6 +14,7 @@ Uma comparação entre controladores de Redes Definidas por Software em cenário
 <div align="justify">
 Nesta Seção são vistos alguns comandos úteis que foram utilizados para visualizar as informações da VM. A Seção instalação informa o processo de instalação do emulador Mininet-WiFi. Por fim, a Seção intalação dos controladores explica o processo de instalação dos controladores SDN.
 </div>
+
 # Comandos
 
 <details><summary>Fdisk</summary>
