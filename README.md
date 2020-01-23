@@ -42,7 +42,7 @@ O programa **fdisk** é usado para a criação e manipulação de tabelas de par
 <p>
 
 
-Outro comando que foi utilizado para visualizar a capacidade de armazenamento interno da VM foi o `“df -h”`, que exibe a quantidade de espaço em disco disponível e a opção -h permite que os valores sejam legíveis para humanos, isto é, mostra os valores em potência de 1024. No entanto este comando não mostrou todas as partições e nem a capacidade total do disco (Figura \ref{hd_vm_df}).
+Outro comando que foi utilizado para visualizar a capacidade de armazenamento interno da VM foi o **`“*df -h”`**, que exibe a quantidade de espaço em disco disponível e a opção -h permite que os valores sejam legíveis para humanos, isto é, mostra os valores em potência de 1024. No entanto este comando não mostrou todas as partições e nem a capacidade total do disco (Figura \ref{hd_vm_df}).
 
 ![text](https://github.com/RandelSouza/TCC/blob/master/img/hd_vm.jpg)
 
