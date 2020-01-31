@@ -149,7 +149,7 @@ Mesmo após a atualização do sistema operacional, o erro ainda acontecia, com 
 
 Possuindo então o ambiente de trabalho pré-configurado e tendo o emulador Mininet-WiFi instalado e sem erros, o passo seguinte foi a instalação dos controladores SDN, a descrição do processo de instalação dos controladores POX, Floodlight e Ryu é apresentada na Seção \ref{ctr-insta} e o teste de conectividade dos controladores citados pode ser consultado no APÊNDICE \ref{instalacaoapendicea}.
 
-\section{Instalação dos controladores SDN} \label{ctr-insta}
+Instalação dos controladores SDN \label{ctr-insta}
 
 Dando continuidade aos passos de execução, chegou-se ao ponto de instalação dos controladores SDN, em ordem foram instalados o Ryu, POX e Floodlight. A instalação do controlador Ryu não apresentou problema, necessitando de apenas 3 comandos. O primeiro comando foi utilizado para clonar o repositório do Ryu presente no \textit{github} com o comndo “\textit{git clone git://github.com/osrg/ryu.git}”, após isso, com o comando “\textit{cd ryu}” entrou-se na pasta clonada e por fim executou-se o arquivo de instalação com o seguinte comando “\textit{python ./setup.py install}”. Os comando estão exposto na Figura \ref{ryu_insta}.
 
