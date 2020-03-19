@@ -80,3 +80,4 @@ plt.grid(True)
 plt.title("Memória disponível\n")
 #plt.savefig("/home/randel/manhattan02.png")
 plt.show()
+

@@ -6,7 +6,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np
-plt.rcParams.update({'font.size': 35})
+plt.rcParams.update({'font.size': 25})
+plt.rc('legend', fontsize=20)  
 
 
 '''
@@ -35,15 +36,14 @@ sys.setdefaultencoding('utf-8')
 
 path = "resultados_experimento"
 controllerSDN = [ "Ryu", "Floodlight", "POX" ]
-#nodesQuantity = [ 26, 38, 52 ]
-nodesQuantity = [ 26, 52, 104 ]
+nodesQuantity = [ 2, 5, 10 ]
 dados = []
 dados_processados = []
 color = ["green", "#ff8c00", "m"]
 size = 20
 
 x = [ 20, 30, 40 ]
-labels=[ "26","52", "104" ]
+labels=[ "2","5", "10" ]
 
 for controller in controllerSDN:
     for quantity in nodesQuantity:
@@ -55,29 +55,64 @@ for dado in dados:
 print dados_processados
 
 
-barWidth = 0.25
-ryu_dados = [dados_processados[0][0], dados_processados[1][0], dados_processados[2][0]]
-ryu_margem_erro = [dados_processados[0][1], dados_processados[1][1], dados_processados[2][1]]
+plt.subplot(221)
+plt.ylim(22, 41)
+plt.plot( [x+1 for x in range(len(dados[1]))], dados[1], label=controllerSDN[0], color=col7or[0],  marker= "o", markersize=2, linestyle='-',  lw=1) 
+plt.legend(loc='best', numpoints=1 , fancybox=True, framealpha=0.5)
+plt.title('Percentual de CPU utilizado\n com 2 nós IoT')
+plt.ylabel('CPU (%)')
+plt.xlabel('Número de coletas')
 
-floodlight_dados = [dados_processados[3][0], dados_processados[4][0], dados_processados[5][0]]
-floodlight_margem_erro = [dados_processados[3][1], dados_processados[4][1], dados_processados[5][1]]
+plt.subplot(222)
+plt.ylim(22, 41)
+plt.plot( [x+1 for x in range(len(dados[4]))], dados[4], label=controllerSDN[1], color= color[1],  marker= "o", markersize=2, linestyle='-', lw=1) 
+plt.legend(loc='best', numpoints=1, fancybox=True, framealpha=0.5)
+plt.title('Percentual de CPU utilizado\n com 2 nós IoT')
+plt.ylabel('CPU (%)')
+plt.xlabel('Número de coletas')
 
-pox_dados = [dados_processados[6][0], dados_processados[7][0], dados_processados[8][0]]
-pox_margem_erro = [dados_processados[6][1], dados_processados[7][1], dados_processados[8][1]]
+plt.subplot(223)
+plt.ylim(22, 41)
+plt.plot( [x+1 for x in range(len(dados[7]))], dados[7], label=controllerSDN[2], color= color[2],  marker= "o", markersize=2, linestyle='-', lw=1) 
+plt.legend(loc='best', numpoints=1, fancybox=True, framealpha=0.5)
+plt.title('Percentual de CPU utilizado\n com 2 nós IoT')
+plt.ylabel('CPU (%)')
+plt.xlabel('Número de coletas')
 
-r1 = np.arange(len(controllerSDN))+0.1
-r2 = [x + barWidth for x in r1]
-r3 = [x + barWidth for x in r2]
+plt.subplot(224)
+plt.ylim(22, 41)
+plt.plot( [x+1 for x in range(len(dados[0]))], dados[1], label=controllerSDN[0], color= color[0],  marker= "o", markersize=2, linestyle='-',  lw=1) 
+plt.plot( [x+1 for x in range(len(dados[0]))], dados[4], label=controllerSDN[1], color= color[1],  marker= "o", markersize=2, linestyle='-', lw=1) 
+plt.plot( [x+1 for x in range(len(dados[0]))], dados[7], label=controllerSDN[2], color= color[2],  marker= "o", markersize=2, linestyle='-', lw=1) 
+plt.legend(loc='best', numpoints=1, fancybox=True, framealpha=0.5)
+plt.title('Percentual de CPU utilizado\n com 2 nós IoT')
+plt.ylabel('CPU (%)')
+plt.xlabel('Número de coletas')
 
-#plt.ylim(0.0, .10)
+plt.subplots_adjust(top=0.92, bottom=0.08, left=0.10, right=0.95, hspace=0.50, wspace=0.35)
+#barWidth = 0.25
+#ryu_dados = [dados_processados[0][0], dados_processados[1][0], dados_processados[2][0]]
+#ryu_margem_erro = [dados_processados[0][1], dados_processados[1][1], dados_processados[2][1]]
 
-bar1 = plt.bar(r1, ryu_dados, color=color[0], width=barWidth, label=controllerSDN[0], yerr=ryu_margem_erro, capsize=55, align='center', error_kw={"capthick": 2, 'ecolor': '#FFFF00'}, edgecolor='white', hatch='/')
+#floodlight_dados = [dados_processados[3][0], dados_processados[4][0], dados_processados[5][0]]
+#floodlight_margem_erro = [dados_processados[3][1], dados_processados[4][1], dados_processados[5][1]]
+
+#pox_dados = [dados_processados[6][0], dados_processados[7][0], dados_processados[8][0]]
+#pox_margem_erro = [dados_processados[6][1], dados_processados[7][1], dados_processados[8][1]]
+
+#r1 = np.arange(len(controllerSDN))
+#r2 = [x + barWidth for x in r1]
+#r3 = [x + barWidth for x in r2]
+
+#plt.ylim(0.0, 100.0)
+
+#plt.bar(r1, ryu_dados, color=color[0], width=barWidth, label=controllerSDN[0], yerr=ryu_margem_erro)
 #plt.plot(r1, ryu_dados, color=color[0])
 
-bar2 = plt.bar(r2, floodlight_dados, color=color[1], width=barWidth, label=controllerSDN[1], yerr=floodlight_margem_erro, capsize=55, align='center', error_kw={"capthick": 2, 'ecolor': 'black'}, edgecolor='white', hatch='+')
+#plt.bar(r2, floodlight_dados, color=color[1], width=barWidth, label=controllerSDN[1], yerr=floodlight_margem_erro)
 #plt.plot(r2, floodlight_dados, color=color[1])
 
-bar3 = plt.bar(r3, pox_dados, color=color[2], width=barWidth, label=controllerSDN[2], yerr=pox_margem_erro, capsize=55, align='center', error_kw={"capthick": 2, 'ecolor': 'blue'}, edgecolor='white', hatch='X')
+#plt.bar(r3, pox_dados, color=color[2], width=barWidth, label=controllerSDN[2], yerr=pox_margem_erro)
 #plt.plot(r3,pox_dados, color=color[2])
 
 '''
@@ -95,23 +130,12 @@ plt.errorbar(22, dados_processados[8][0], yerr=dados_processados[8][1], linestyl
 '''
 
 #plt.xticks(x, labels)
-plt.xticks([r+0.1  + barWidth for r in range(len(controllerSDN))], labels)
-plt.xlabel('Número de nós IoT\n')
-plt.ylabel('CPU (%)\n')
+#plt.xticks([r+0.1  + barWidth for r in range(len(controllerSDN))], labels)
+#plt.xlabel('Número de nós IoT\n')
+#plt.legend(loc='best')
+#plt.ylabel('CPU (%)\n')
 
-# Turn on the grid
-plt.minorticks_on()
-plt.grid(which='major', linestyle='-', linewidth='0.5', color='red')
-# Customize the minor grid
-plt.grid(which='minor', linestyle=':', linewidth='0.5', color='black')
-
-for rect in bar1 + bar2 + bar3:
-    height = rect.get_height()
-    plt.text(rect.get_x() + rect.get_width()/2.0, height, '%.3f' % float(height), ha='center', va='bottom', fontsize=20)
-
-plt.legend(loc='best', framealpha=0.5)
-plt.grid(True)
-plt.title("Percentual de CPU utilizado\n")
+#plt.title("Percentual de CPU utilizado\n")
 #plt.savefig("/home/randel/manhattan02.png")
 plt.show()
 

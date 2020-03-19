@@ -21,17 +21,17 @@ controllerSDN=( Ryu Floodlight POX )
 #controllerSDN=( Floodlight );
 #controllerSDN=( POX );
 
-#nodesQuantity=( 25 50 100 );
+#nodesQuantity=( 2 4 6 );
 
-nodesQuantity=( 26 52 104 );
-
-stopValueNodesQuantity=104;
+#nodesQuantity=( 26 52 104 );
+nodesQuantity=( 104 );
+stopValueNodesQuantity=104
+#stopValueNodesQuantity=104
 #repeat=500
-repeat=100
-#repeat=1
+#repeat=100
+repeat=30
 
-
-#python ~/TCC/Experimento/send_mail.py "Iniciando Experimento TCC2" "Data: `date +%d/%m/%y` Horário de início: `date +%H:%M:%S`"
+python ~/TCC/Experimento/send_mail.py "Iniciando Experimento TCC2" "Data: `date +%d/%m/%y` Horário de início: `date +%H:%M:%S`"
 
 mkdir ~/TCC/Experimento/resultados_experimento > /dev/null 2> /dev/null;
 
@@ -63,7 +63,7 @@ do
 					echo "Rodando o mininet wifi e criando o cenário.";
 					echo "Experimento do controlador $controller com $quantity nós. Número $repeat_number.";
 
-					if [ $quantity -eq $stopValueNodesQuantity ]
+					if [ $quantity -eq $stopValueNodesQuantity ] && [ $repeat_number -eq $repeat ]
 					then
 						flag="stop";
 					fi
@@ -106,7 +106,7 @@ do
 					echo "Rodando o mininet wifi e criando o cenário.";
 					echo "Experimento do controlador $controller com $quantity nós. Número $repeat_number.";
 
-					if [ $quantity -eq $stopValueNodesQuantity ]
+					if [ $quantity -eq $stopValueNodesQuantity ] && [ $repeat_number -eq $repeat ]
 					then
 						flag="stop";
 					fi
@@ -149,7 +149,7 @@ do
 					echo "Rodando o mininet wifi e criando o cenário.";
 					echo "Experimento do controlador $controller com $quantity nós. Número $repeat_number.";
 
-					if [ $quantity -eq $stopValueNodesQuantity ]
+					if [ $quantity -eq $stopValueNodesQuantity ] && [ $repeat_number -eq $repeat ]
 					then
 						flag="stop";
 					fi

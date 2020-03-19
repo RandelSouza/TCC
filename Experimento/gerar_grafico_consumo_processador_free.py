@@ -35,6 +35,7 @@ sys.setdefaultencoding('utf-8')
 
 path = "resultados_experimento"
 controllerSDN = [ "Ryu", "Floodlight", "POX" ]
+#nodesQuantity = [ 26, 52, 66 ]
 nodesQuantity = [ 26, 52, 104 ]
 dados = []
 dados_processados = []
@@ -80,3 +81,4 @@ plt.grid(True)
 plt.title("Memória livre\n")
 #plt.savefig("/home/randel/manhattan02.png")
 plt.show()
+

@@ -2,7 +2,9 @@
 
 path="resultados_experimento";
 controllerSDN=( Ryu Floodlight POX );
-nodesQuantity=( 26 52 104 );
+nodesQuantity=( 104 );
+#nodesQuantity=( 26 52 66 );
+#nodesQuantity=( 26 52 104 );
 
 for controller in "${controllerSDN[@]}"
 do

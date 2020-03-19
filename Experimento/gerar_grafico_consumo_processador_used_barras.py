@@ -36,6 +36,7 @@ sys.setdefaultencoding('utf-8')
 
 path = "resultados_experimento"
 controllerSDN = [ "Ryu", "Floodlight", "POX" ]
+#nodesQuantity = [ 26, 38, 52 ]
 nodesQuantity = [ 26, 52, 104 ]
 dados = []
 dados_processados = []
@@ -44,6 +45,7 @@ color = ["green", "#ff8c00", "m"]
 size = 20
 
 x = [ 20, 30, 40 ]
+#labels=[ "26","38", "52" ]
 labels=[ "26","52", "104" ]
 
 for controller in controllerSDN:

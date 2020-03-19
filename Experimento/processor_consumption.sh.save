@@ -1,0 +1,14 @@
+#!/bin/bash
+
+while true;
+do
+  for i in `seq 100`
+  do
+      if
+      then
+	 condition=false;
+      fi
+
+      free -m >> free.txt;
+  done
+done

@@ -81,3 +81,4 @@ plt.title("Latência mínima\n")
 #plt.savefig("/home/randel/manhattan02.png")
 plt.grid(True)
 plt.show()
+

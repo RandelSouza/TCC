@@ -36,6 +36,8 @@ sys.setdefaultencoding('utf-8')
 
 path = "resultados_experimento"
 controllerSDN = [ "Ryu", "Floodlight", "POX" ]
+#nodesQuantity = [ 26, 38, 52 ]
+#nodesQuantity = [ 26, 52, 66 ]
 nodesQuantity = [ 26, 52, 104 ]
 dados = []
 dados_processados = []
@@ -43,6 +45,8 @@ color = ["green", "#ff8c00", "m"]
 size = 20
 
 x = [ 2, 12, 21 ]
+#labels=[ "26","38", "52" ]
+#labels=[ "26","52", "66" ]
 labels=[ "26","52", "104" ]
 
 for controller in controllerSDN:
@@ -72,7 +76,6 @@ plt.plot([1, 11, 20], [dados_processados[0][0], dados_processados[1][0], dados_p
 plt.plot([2, 12, 21], [dados_processados[3][0], dados_processados[4][0], dados_processados[5][0]], color=color[1], linewidth=1, linestyle='dashed')
 plt.plot([3, 13, 22], [dados_processados[6][0], dados_processados[7][0], dados_processados[8][0]], color=color[2], linewidth=1, linestyle='dashed')
 
-
 plt.xticks(x, labels)
 plt.xlabel('Número de nós IoT\n')
 plt.ylabel(' Megabyte (MB)\n')
@@ -81,3 +84,4 @@ plt.grid(True)
 plt.title("Memória utilizada\n")
 #plt.savefig("/home/randel/manhattan02.png")
 plt.show()
+
