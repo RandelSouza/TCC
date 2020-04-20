@@ -196,6 +196,6 @@ Por fim, foi realizada a instalação do controlador Floodlight. De início, ten
 Finalizado o processo de instalação dos controladores Ryu, POX e Floodlight, o passo posterior foi a criação dos \textit{scripts} de automatização dos experimentos, a Seção \ref{scripts-experimentos} discute, o modelo empregado para a automatização dos experimentos, discorrendo também de informações importantes sobre os fatores e níveis empregados para o presente trabalho.
 % fazer link mais detalhado com a ãSeo seguinte
 </p>
-</details>
+</details>.
 
 
